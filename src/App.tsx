@@ -1,17 +1,18 @@
-import './App.css'
-import Typography from './components/Typography.tsx';
+import "./css/App.css";
+import Sidebar from "./components/Sidebar";
+import Typography from "./sections/Typography";
 
 function App() {
   return (
     <>
-      <h1 className="margin_0 padding_0">HTML5 &lt;Tag&gt; Reference</h1>
-      <p className="margin_0 padding_0"> Last updated on 23 July 2023 </p>
-
-      <h2>Typography</h2>
-      <Typography />
-
+    <Sidebar />
+      <div className="content">
+        <h1>HTML5 &lt;Tag&gt; Reference</h1>
+        
+        <Typography />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,32 @@
+.sidebar {
+  margin: 0;
+  padding: 45px 0 0 6px;
+  width: 180px;
+  background-color: #abd1c6;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: #001e1d;
+  padding: 10px 0 6px 10px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  div .content {
+    margin-left: 0;
+  }
+}
+
