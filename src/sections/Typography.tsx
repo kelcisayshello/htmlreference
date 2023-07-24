@@ -3,6 +3,7 @@ import Element from "../components/Element";
 export default function Typography() {
   return (
     <div>
+      <a href="https://www.englishclub.com/reading/cr-hare-tortoise.php"><Element element="a" exmpl="https://www.englishclub.com/reading/cr-hare-tortoise.php"/></a>
       <Element element="h1" exmpl="The Hare and the Tourtoise"/>
       <Element element="h2" exmpl="The Hare and the Tourtoise"/>
       <Element element="h3" exmpl="The Hare and the Tourtoise"/>
