@@ -1,11 +1,34 @@
-// import React from 'react';
+import { createElement } from "react";
 
-export default function Element({element, exmpl}: { element: string; exmpl: string;}) {
-    const DynamicTag: string = `${ element }` as keyof JSX.IntrinsicElements;
-    return (
-        <div id={element} className={element}>
-            <h3 style={{ color: "#fffffe" }}>&lt;{element}&gt;</h3>
-            <DynamicTag style={{ color: "#abd1c6" }}>{ exmpl }</DynamicTag>
-        </div>
+// function Greeting({ name }: { name: string }) {
+//   return (
+//     <h1 className="greeting">
+//       Hello <i>{name}</i>. Welcome!
+//     </h1>
+//   );
+// }
+
+export default function Element({
+  element,
+  exmpl,
+}: {
+  element: string;
+  exmpl: string;
+}) {
+  function DynamicTag() {
+    return createElement(
+      `${ element }`,
+      { className: "example" },
+      `${ exmpl }`
     );
+  }
+
+  //   var DynamicTag: string = `${element}` as keyof JSX.IntrinsicElements;
+  return (
+    <div id={element} className={element}>
+      <h3 style={{ color: "#fffffe" }}>&lt;{element}&gt;</h3>
+      {/* <DynamicTag>{exmpl}</DynamicTag> */}
+      <DynamicTag />
+    </div>
+  );
 }
