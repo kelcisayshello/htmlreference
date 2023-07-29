@@ -1,19 +1,21 @@
 import { createElement } from "react";
+import Label from "./Label";
 
-export default function Element({
-  element,
-  exmpl,
-}: {
+export default function Element({ element, sample, }: {
   element: string;
-  exmpl: string;
+  sample: string;
 }) {
   function DynamicTag() {
-    return createElement(`${element}`, { className: "example" }, `${exmpl}`);
+    return createElement(`${element}`, { className: "sample" }, `${sample}`);
   }
+
+  // function Label() {
+  //   return createElement("h4", { className: "tag-label font-bowlby" }, `<${element}>`);
+  // }
 
   return (
     <div id={element} className={element}>
-      <h3 style={{ color: "#fffffe" }}>&lt;{element}&gt;</h3>
+      <Label tag={element}/>
       <DynamicTag />
     </div>
   );

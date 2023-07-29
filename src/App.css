@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400&display=swap');
+
+/* ---------------------------------- ROOT ---------------------------------- */
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* theme colors */
+  --green_dark: #004643;
+  --green_extra_dark: #001e1d;
+  --green_light: #abd1c6;
+  --white: #fffffe;
+  --yellow: #f9bc60;
+  --orange_burnt: #e16162;
+}
+/* ---------------------------------- ROOT ---------------------------------- */
+
+html {
+  font-size: 16px;
+  background-color: var(--green_dark);
+}
+
+body {
+  background-color: var(--green_dark);
+  margin: auto;
+  width: 85vw;
+  min-height: 100vh;
+  color: var(--green_light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: inherit;
+  color: var(--yellow);
+}
+
+a:hover {
+  color: var(--orange_burnt);
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--green_dark);
+}
+
+mark {
+  background-color: var(--orange_burnt);
+  color: var(--white)!important;
+}
+
+h1.site-title {
+  color: var(--white);
+  font-size: 3.2rem;
+  margin: 2rem 0px 0px;
+}
+
+div.app-container {
+  overflow-x: none;
+  font-family: 'Open Sans', sans-serif;
+
+  padding: 0px 0px 2rem;
+  font-weight: 400;
+}
+
+/* ----------------------------- COMMON CLASSES ----------------------------- */
+.font-bowlby {
+  font-family: 'Bowlby One', cursive;
+}
+
+.font-italics {
+  font-style: italic;
+}
+
+.font-bold {
+  font-weight: 800;
+}
+

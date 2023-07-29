@@ -1,0 +1,32 @@
+h2.site-header {
+    background-color: var(--yellow);
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: var(--green_extra_dark);
+    border-radius: 2px;
+    border: 2px solid var(--green_extra_dark);
+    margin: 5rem 0 0px;
+}
+
+h2.site-header::selection {
+    background: var(--green_dark);
+    color: var(--yellow);
+}
+
+pre {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.sample {
+    color: var(--green-light);
+}
+
+
+.tag-label {
+    color: var(--white);
+    text-rendering: optimizeLegibility;
+    letter-spacing: 1px;
+    margin: 3rem 0px 0.5rem;
+}
