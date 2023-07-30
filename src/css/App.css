@@ -20,7 +20,11 @@
   --yellow: #f9bc60;
   --orange_burnt: #e16162;
 }
-/* ---------------------------------- ROOT ---------------------------------- */
+
+::selection {
+  background: var(--yellow);
+  color: var(--green_dark);
+}
 
 html {
   font-size: 16px;
@@ -33,46 +37,6 @@ body {
   width: 85vw;
   min-height: 100vh;
   color: var(--green_light);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
-
-code {
-  background-color: var(--green_light);
-  color: var(--green_extra_dark);
-  padding: 0px 0.3rem;
-  margin: 0px 0.3rem;
-  border: none;
-  border-radius: 2px;
-  font-family: 'Ubuntu Mono', monospace;
-  font-weight: 700;
-}
-
-pre {
-  word-wrap: break-word;
-  white-space: pre-wrap;
-  word-break: break-word;
-}
-
-a {
-  text-decoration: inherit;
-  color: var(--yellow);
-}
-
-a:hover {
-  color: var(--orange_burnt);
-}
-
-::selection {
-  background: var(--yellow);
-  color: var(--green_dark);
-}
-
-mark {
-  background-color: var(--orange_burnt);
-  color: var(--white)!important;
 }
 
 h1.site-title {
@@ -89,9 +53,176 @@ div.app-container {
   font-weight: 400;
 }
 
+/* h2.site-header {
+  background-color: var(--yellow);
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: var(--green_extra_dark);
+  border-radius: 2px;
+  border: 2px solid var(--green_extra_dark);
+  margin: 5rem 0 0px;
+} */
+
+/* h2.site-header::selection {
+  background: var(--green_dark);
+  color: var(--yellow);
+} */
+
+/* ---------------------------------- TAGS ---------------------------------- */
+a {
+  text-decoration: inherit;
+  color: var(--yellow);
+}
+
+a:hover {
+  color: var(--orange_burnt);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+blockquote {
+  background-color: var(--white);
+  border: 2px solid var(--green_extra_dark);
+  border-radius: 4px;
+  color: var(--green_extra_dark);
+  min-height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem;
+}
+
+button {
+  min-height: 2rem;
+  min-width: 6rem;
+  margin: 0.9rem 0;
+  background-color: var(--orange_burnt);
+  color: var(--white);
+  border: none;
+  border-radius: 2px;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--green_light);
+}
+
+button:active{
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.40) inset;
+}
+
+code {
+  background-color: var(--green_light);
+  color: var(--green_extra_dark);
+  padding: 0px 0.3rem;
+  margin: 0px 0.3rem;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 700;
+}
+
+data:hover::after {
+  content: ' (data: ' attr(value) ')';
+  font-size: 0.7rem;
+}
+
+del {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  background-color: #fbb;
+  width: 100%;
+  color: var(--green_extra_dark);
+  padding: 0.3rem;
+  margin: 0.8rem 0;
+}
+
+del::before {
+  position: absolute;
+  left: -2rem;
+  font-family: monospace;
+  content: '-';
+  color: #fbb;
+}
+
+
+ins {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  background-color: #d4fcbc;
+  width: 100%;
+  color: var(--green_extra_dark);
+  padding: 0.3rem;
+  margin: 0.8rem 0;
+}
+
+ins::before {
+  position: absolute;
+  left: -2rem;
+  font-family: monospace;
+  content: '+';
+  color: #d4fcbc;
+}
+
+/* kbd {
+  background-color: var(--yellow);
+  padding: 0.3rem 1rem;
+  margin: 1.3rem 0;
+  border-radius: 2px;
+} */
+
+kbd {
+  border: 2px solid var(--yellow);
+  padding: 0.3rem 1rem;
+  margin: 1.3rem 0;
+  border-radius: px;
+  color: var(--yellow);
+}
+
+mark {
+  background-color: var(--orange_burnt);
+  color: var(--white)!important;
+}
+
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+progress {
+  /* background-color: var(--yellow); */
+  background-color: var(--green_dark);
+  border: 0.5px solid var(--yellow);
+  border-radius: 1px;
+  width: 40%;
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--green_dark);
+  border: 0.5px solid var(--yellow);
+  border-radius: 1px;
+
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--yellow);
+}
+
+progress::-moz-progress-bar{
+  background-color: var(--yellow);
+}
 /* ----------------------------- COMMON CLASSES ----------------------------- */
 .font-bowlby {
   font-family: 'Bowlby One', cursive;
+}
+
+.font-ubuntu {
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .font-italics {
@@ -109,18 +240,3 @@ div.app-container {
 .m-btm-large {
   margin-bottom: 4.5rem;
 }
-
-/* h2.site-header {
-  background-color: var(--yellow);
-  padding: 0.5rem;
-  font-size: 2rem;
-  color: var(--green_extra_dark);
-  border-radius: 2px;
-  border: 2px solid var(--green_extra_dark);
-  margin: 5rem 0 0px;
-} */
-
-/* h2.site-header::selection {
-  background: var(--green_dark);
-  color: var(--yellow);
-} */
