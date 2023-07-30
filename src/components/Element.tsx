@@ -1,22 +1,24 @@
 import { createElement } from "react";
-import Label from "./Label";
+import Label from "./Label"
 
-export default function Element({ element, sample, }: {
-  element: string;
-  sample: string;
+export default function Element({ element, sample, classname, link }: {
+    element: string;
+    sample?: string;
+    classname?: string;
+    link?: string;
 }) {
-  function DynamicTag() {
-    return createElement(`${element}`, { className: "sample" }, `${sample}`);
-  }
-
-  // function Label() {
-  //   return createElement("h4", { className: "tag-label font-bowlby" }, `<${element}>`);
-  // }
-
-  return (
-    <div id={element} className={element}>
-      <Label tag={element}/>
-      <DynamicTag />
-    </div>
-  );
+    function Elem() {
+        return createElement(`${element}`, { className: `${classname}`, href: `${link}`, target: "_blank" }, `${sample}`);
+    }
+    return (
+        <>
+            <div className="tag-section">
+                <Label tag={element} />
+                {/* <p className="tag-attribute-label">Attribute(s):</p> */}
+                <div className="tag-example">
+                    <Elem />
+                </div>
+            </div>
+        </>
+    );
 }
