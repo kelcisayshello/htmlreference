@@ -53,7 +53,7 @@ div.app-container {
   font-weight: 400;
 }
 
-/* h2.site-header {
+h2.site-header {
   background-color: var(--yellow);
   padding: 0.5rem;
   font-size: 2rem;
@@ -61,12 +61,12 @@ div.app-container {
   border-radius: 2px;
   border: 2px solid var(--green_extra_dark);
   margin: 5rem 0 0px;
-} */
+}
 
-/* h2.site-header::selection {
+h2.site-header::selection {
   background: var(--green_dark);
   color: var(--yellow);
-} */
+}
 
 /* ---------------------------------- TAGS ---------------------------------- */
 a {
@@ -112,6 +112,11 @@ button:active{
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.40) inset;
 }
 
+caption {
+  padding: 0.3rem;
+  caption-side: bottom;
+}
+
 code {
   background-color: var(--green_light);
   color: var(--green_extra_dark);
@@ -120,6 +125,10 @@ code {
   border-radius: 2px;
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 700;
+}
+
+.colgroup {
+  background-color: var(--green_extra_dark);
 }
 
 data:hover::after {
@@ -211,9 +220,30 @@ progress::-moz-progress-bar{
   background-color: var(--yellow);
 }
 
+table {
+  border: 1px solid var(--green_light);
+  border-collapse: collapse;
+  width: auto;
+  text-align: left;
+}
+
+th,td {
+  border-bottom: 1px solid var(--green_light);
+  padding: 7px;
+}
+
 time {
   font-weight: bold;
 }
+
+#wbr {
+  overflow: hidden;
+  resize: horizontal;
+  width: 35%;
+  border: 1px solid var(--green_light);
+  padding: 5px;
+}
+
 /* ----------------------------- COMMON CLASSES ----------------------------- */
 .font-bowlby {
   font-family: 'Bowlby One', cursive;
