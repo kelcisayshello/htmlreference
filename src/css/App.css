@@ -68,6 +68,10 @@ h2.site-header::selection {
   color: var(--yellow);
 }
 
+footer.site-footer {
+  text-align: center;
+  margin: 4rem 0 1rem;
+}
 /* ---------------------------------- TAGS ---------------------------------- */
 a {
   text-decoration: inherit;

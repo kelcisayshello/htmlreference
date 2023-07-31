@@ -3,6 +3,8 @@ import Containers from "./sections/Containers";
 import "./css/App.css";
 
 function App() {
+  const date = new Date();
+
   return (
     <>
       <div className="app-container">
@@ -11,6 +13,10 @@ function App() {
 
         <Containers />
         <HTML />
+
+        <footer className="site-footer">
+          <p>Copyright © {date.getFullYear()} <a target="_blank" href="https://www.github.com/kelcisayshello">kelcisayshello</a></p>
+        </footer>
       </div>
     </>
   );
