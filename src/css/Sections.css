@@ -32,3 +32,20 @@
     background-color: var(--orange_burnt);
     color: var(--white);
 }
+
+.tag-information {
+    background-color: var(--green_light);
+    color: var(--green_dark);
+    border-radius: 2px;
+}
+
+.tag-information tr, td {
+    padding: 5px;
+    margin: 0;
+    height: 0;
+    font-weight: 500;
+}
+
+.tag-information th {
+    padding: 1rem;
+}

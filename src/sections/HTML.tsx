@@ -1,11 +1,12 @@
-import "../css/HTML.css";
 import example_map from "../media/map.png";
 import example_picture from "../media/picture.png";
 import example_audio from "../media/music.mp3";
 import example_video from "../media/video.mp4";
 import example_object from "../media/object.svg";
-import Element from "../components/Element";
+import { Element } from "../components/Element";
 import Label from "../components/Label";
+import "../css/Sections.css";
+
 
 export default function HTML() {
     const date = new Date();
@@ -59,7 +60,7 @@ export default function HTML() {
                 <Label tag="col, colgroup, caption" />
                 {/* <p className="tag-attribute-label">Attribute(s):</p> */}
                 <div className="tag-example">
-                    <table className="m-top-btm">
+                    <table id="table" className="m-top-btm">
                         <caption>an example caption for a table in HTML</caption>
                         <colgroup>
                             <col />

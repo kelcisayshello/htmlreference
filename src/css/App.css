@@ -220,14 +220,14 @@ progress::-moz-progress-bar{
   background-color: var(--yellow);
 }
 
-table {
+#table {
   border: 1px solid var(--green_light);
   border-collapse: collapse;
   width: auto;
   text-align: left;
 }
 
-th,td {
+#table th, #table td {
   border-bottom: 1px solid var(--green_light);
   padding: 7px;
 }
