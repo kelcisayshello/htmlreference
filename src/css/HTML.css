@@ -13,8 +13,6 @@
 
 .tag-example {
     color: var(--green_light);
-    /* border: 1.2px dashed var(--green_light); */
-    /* border: 2.5px solid var(--green_extra_dark); */
     border: 2px dashed var(--green_extra_dark);
     border-radius: 2px;
     padding: 0 0.6rem;

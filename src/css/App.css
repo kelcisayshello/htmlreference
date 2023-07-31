@@ -97,7 +97,6 @@ blockquote {
 button {
   min-height: 2rem;
   min-width: 6rem;
-  margin: 0.9rem 0;
   background-color: var(--orange_burnt);
   color: var(--white);
   border: none;
@@ -117,7 +116,6 @@ code {
   background-color: var(--green_light);
   color: var(--green_extra_dark);
   padding: 0px 0.3rem;
-  margin: 0px 0.3rem;
   border: none;
   border-radius: 2px;
   font-family: 'Ubuntu Mono', monospace;
@@ -168,19 +166,15 @@ ins::before {
   color: #d4fcbc;
 }
 
-/* kbd {
-  background-color: var(--yellow);
-  padding: 0.3rem 1rem;
-  margin: 1.3rem 0;
-  border-radius: 2px;
-} */
-
 kbd {
   border: 2px solid var(--yellow);
   padding: 0.3rem 1rem;
-  margin: 1.3rem 0;
   border-radius: px;
   color: var(--yellow);
+}
+
+label {
+  margin-right: 0.6rem;
 }
 
 mark {
@@ -216,6 +210,10 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar{
   background-color: var(--yellow);
 }
+
+time {
+  font-weight: bold;
+}
 /* ----------------------------- COMMON CLASSES ----------------------------- */
 .font-bowlby {
   font-family: 'Bowlby One', cursive;
@@ -235,6 +233,10 @@ progress::-moz-progress-bar{
 
 .m-btm-medium {
   margin-bottom: 2rem;
+}
+
+.m-top-btm {
+  margin: 1rem 0;
 }
 
 .m-btm-large {

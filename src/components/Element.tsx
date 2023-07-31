@@ -35,7 +35,8 @@ export default function Element({ element,
             cite:`${citation}`,
             value: `${data}`,
             type: `${mediatype}`,
-            datetime: `${date}`
+            datetime: `${date}`,
+            controls: true,
         },
             `${sample}`);
     }
