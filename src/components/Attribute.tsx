@@ -37,14 +37,9 @@ export default function Attr({ required, optional, deprecated }: Props) {
 
         for (let i = 0; i < d_arr.length; i++) {d_arr[i] = d_arr[i].trim()}
 
-
         r_arr = r_arr.sort();
-        console.log(r_arr);
         o_arr = o_arr.sort();
-        console.log(o_arr);
-
         d_arr = d_arr.sort();
-        console.log(d_arr);
 
         useEffect(() => {
             const element = ref.current;

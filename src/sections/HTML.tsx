@@ -38,7 +38,6 @@ export default function HTML() {
 
             <Element element="abbr" sample="HTML" text="HyperText Markup Language" />
             <Element element="address" sample="sample@email.com" />
-            <Element element="audio" classname="m-top-btm" source={example_audio} />
 
             <Element element="b" sample="This sample text has been marked as bolded." />
             {/* <Element element="br" sample="br"/> */}

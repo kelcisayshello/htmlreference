@@ -17,7 +17,7 @@ export default function Inform({ description, href }: Props) {
                     <th><FontAwesomeIcon icon={faInfo} /></th>
                     <td>
                         <p className="tag-description">{description}</p>
-                        <p className="tag-link-container"><a href={url}>MDN Docs</a></p>
+                        <p className="tag-link-container"><a target="_blank" href={url}>MDN Docs</a></p>
                         </td>
                 </tr>
             </table>

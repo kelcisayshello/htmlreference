@@ -27,7 +27,6 @@ export function NoExample({ element, required="", optional="", deprecated="", de
 interface PropsE {
     // required attributes
     element: string;
-    example: string;
     description: string;
     mdn: string;
 
@@ -39,6 +38,10 @@ interface PropsE {
     optional?: string;
     deprecated?: string;
     href?: string;
+    content?: string;
+    src?: string;
+    height?: string;
+    width?: string;
 
     // global tag attributes (optional)
     id?: string;
@@ -47,7 +50,7 @@ interface PropsE {
     data?: string;
 }
 
-export function Example({element, example, description, href, required="", optional="", deprecated="", mdn}: PropsE){
+export function Example({element, content, description, href, required="", optional="", deprecated="", mdn, src, height="", width=""}: PropsE){
 
     function CustomElement() {
         return createElement(
@@ -56,11 +59,14 @@ export function Example({element, example, description, href, required="", optio
                 max: 100,
                 href: `${href}`,
                 target: "_blank",
-                src: `${href}`,
+                src: `${src}`,
+                className: "m-top-btm",
                 cite: `${href}`,
                 controls: true,
+                width: `${width}`,
+                height: `${height}`,
             },
-            `${example}`);
+            `${content}`);
     }
 
     return (
