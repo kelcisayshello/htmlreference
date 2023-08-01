@@ -32,6 +32,12 @@
     border-radius: 4px;
 }
 
+.tag-none {
+    /* border: 2px solid var(--purple); */
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
 .tag-optional {
     border: 2px solid var(--purple);
 }
