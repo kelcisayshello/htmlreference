@@ -49,6 +49,7 @@
     color: var(--green_dark);
     border-radius: 2px;
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 .tag-information tr, td {

@@ -3,8 +3,10 @@ import example_picture from "../media/picture.png";
 import example_audio from "../media/music.mp3";
 import example_video from "../media/video.mp4";
 import example_object from "../media/object.svg";
-import { Element } from "../components/Element";
+import { Element} from "../components/Element";
 import Label from "../components/Label";
+import Header from "../components/Header";
+
 import "../css/Sections.css";
 
 
@@ -14,7 +16,8 @@ export default function HTML() {
 
     return (
         <>
-            <h2 className="site-header font-bowlby">HTML Element Tags</h2>
+            <Header header="HTML" />
+
             <Element element="a" sample="https://www.englishclub.com/reading/cr-hare-tortoise.php" url="https://www.englishclub.com/reading/cr-hare-tortoise.php" />
 
             <div className="tag-section">
