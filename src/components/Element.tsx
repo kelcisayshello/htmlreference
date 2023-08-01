@@ -3,12 +3,20 @@ import Label from "./Label"
 import Inform from "./Inform"
 import Attr from "./Attribute"
 
-export function Description({ element, o_attr, d_attr, description }: { element: string, o_attr?: string, d_attr?:string, description?: string }) {
+interface Props {
+    element: string;
+    r_attr?: string;
+    o_attr?: string;
+    d_attr?: string;
+    description: string;
+}
+
+export function NoExample({ element, r_attr="", o_attr="", d_attr="", description }: Props) {
     return (
         <>
             <div className="tag-section">
                 <Label tag={element} />
-                <Attr optional={o_attr} deprecated={d_attr} />
+                <Attr required={r_attr} optional={o_attr} deprecated={d_attr} />
                 <Inform description={description} />
             </div>
         </>
