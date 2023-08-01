@@ -21,16 +21,27 @@
     align-items: center;
 }
 
-.tag-attribute-label {
-    margin: 0;
+.tag-attribute-container {
+    margin: 0 0 0.3rem;
 }
 
 .tag-attribute {
-    margin: 0 0.1rem;
-    padding: 0.2rem 0.4rem;
+    display: inline-block;
+    margin: 0 0.3rem;
+    padding: 0 0.3rem;
     border-radius: 6px;
-    background-color: var(--orange_burnt);
-    color: var(--white);
+}
+
+.tag-optional {
+    border: 2px solid var(--purple);
+}
+
+.tag-required {
+    border: 2px solid var(--orange);
+}
+
+.tag-deprecated {
+    text-decoration: line-through;
 }
 
 .tag-information {
