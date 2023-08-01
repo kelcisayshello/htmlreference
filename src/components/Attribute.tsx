@@ -53,7 +53,7 @@ export default function Attr({ required, optional, deprecated }: Props) {
                         node.className = "tag-attribute tag-required";
                         attribute = document.createTextNode(`${r_arr[i]}`.trim());
                         node.appendChild(attribute);
-                        element.appendChild(node);
+                        element!.appendChild(node);
                     }
                 }
 
@@ -63,7 +63,7 @@ export default function Attr({ required, optional, deprecated }: Props) {
                         node.className = "tag-attribute tag-optional";
                         attribute = document.createTextNode(`${o_arr[i]}`.trim());
                         node.appendChild(attribute);
-                        element.appendChild(node);
+                        element!.appendChild(node);
                     }
                 }
 
@@ -73,7 +73,7 @@ export default function Attr({ required, optional, deprecated }: Props) {
                         node.className = "tag-attribute tag-deprecated";
                         attribute = document.createTextNode(`${d_arr[i]}`.trim());
                         node.appendChild(attribute);
-                        element.appendChild(node);
+                        element!.appendChild(node);
                     }
                 }
             };

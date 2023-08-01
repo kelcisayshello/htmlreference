@@ -1,6 +1,5 @@
 import example_map from "../media/map.png";
 import example_picture from "../media/picture.png";
-import example_audio from "../media/music.mp3";
 import example_video from "../media/video.mp4";
 import example_object from "../media/object.svg";
 import { Element} from "../components/Element";
