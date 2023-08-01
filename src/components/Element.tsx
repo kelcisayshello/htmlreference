@@ -9,16 +9,16 @@ interface PropsNE {
     optional?: string;
     deprecated?: string;
     description: string;
-    url: string;
+    mdn: string;
 }
 
-export function NoExample({ element, required="", optional="", deprecated="", description, url }: PropsNE) {
+export function NoExample({ element, required="", optional="", deprecated="", description, mdn }: PropsNE) {
     return (
         <>
             <div className="tag-section">
                 <Label tag={element} />
                 <Attr required={required} optional={optional} deprecated={deprecated} />
-                <Inform description={description} href={url}/>
+                <Inform description={description} href={mdn}/>
             </div>
         </>
     );

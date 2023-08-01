@@ -33,7 +33,6 @@
 }
 
 .tag-none {
-    /* border: 2px solid var(--purple); */
     text-decoration: underline;
     opacity: 0.5;
 }
@@ -48,6 +47,7 @@
 
 .tag-deprecated {
     text-decoration: line-through;
+    opacity: 0.8;
 }
 
 .tag-information {
