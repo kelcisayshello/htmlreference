@@ -7,7 +7,7 @@ interface Props {
     deprecated?: React.ReactNode;
 }
 
-export default function Attr({ required, optional, deprecated }: Props) {
+export default function Attr({ required="", optional="", deprecated="" }: Props) {
     const ref = useRef<HTMLDivElement>(null);
     // console.log("test i" + ref);
 

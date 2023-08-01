@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+.tag-section iframe {
+    border: none;
+    width: 100%;
+    /* display: flexbox; */
+    /* margin-bottom: 0; */
+    height: 152px;
+}
+
 .tag-label {
     color: var(--white);
     text-rendering: optimizeLegibility;

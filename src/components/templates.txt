@@ -5,3 +5,12 @@
 	description=""
 	url="" 
 />
+
+<Example element=""
+	src=""
+	required=""
+	optional=""
+	deprecated=""
+	description=""
+	mdn=""
+/>

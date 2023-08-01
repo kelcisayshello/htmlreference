@@ -38,7 +38,7 @@ interface PropsE {
     optional?: string;
     deprecated?: string;
     href?: string;
-    content?: string;
+    content?: string|null;
     src?: string;
     height?: string;
     width?: string;
@@ -50,13 +50,13 @@ interface PropsE {
     data?: string;
 }
 
-export function Example({element, content, description, href, required="", optional="", deprecated="", mdn, src, height="", width=""}: PropsE){
+export function Example({element, content=null, description, href, required="", optional="", deprecated="", mdn, src, height="", width=""}: PropsE){
 
     function CustomElement() {
         return createElement(
             `${element}`,
             {
-                max: 100,
+                // max: 100,
                 href: `${href}`,
                 target: "_blank",
                 src: `${src}`,
