@@ -9,32 +9,23 @@ interface Props {
 
 export default function Attr({ required, optional, deprecated }: Props) {
     const ref = useRef<HTMLDivElement>(null);
+    console.log("test i" + ref);
 
     function addAttributes() {
         const r_string = required!.toString();
         let r_arr = r_string.split(",");
-        if (r_string == "") {
-            r_arr = []
-        }
-
-        for (let i = 0; i < r_arr.length; i++) {r_arr[i] = r_arr[i].trim()}
-
+        if (r_string == "") { r_arr = [] }
 
         let o_string = optional!.toString();
         let o_arr = o_string.split(",");
-        if (o_string == "") {
-            o_arr = []
-        }
-
-        for (let i = 0; i < o_arr.length; i++) {o_arr[i] = o_arr[i].trim()}
-
+        if (o_string == "") { o_arr = []} 
 
         let d_string = deprecated!.toString();
         let d_arr = d_string.split(", ");
-        if (d_string == "") {
-            d_arr = []
-        }
-
+        if (d_string == "") { d_arr = [] }
+        
+        for (let i = 0; i < r_arr.length; i++) {r_arr[i] = r_arr[i].trim()}
+        for (let i = 0; i < o_arr.length; i++) {o_arr[i] = o_arr[i].trim()}
         for (let i = 0; i < d_arr.length; i++) {d_arr[i] = d_arr[i].trim()}
 
         r_arr = r_arr.sort();
@@ -43,41 +34,39 @@ export default function Attr({ required, optional, deprecated }: Props) {
 
         useEffect(() => {
             const element = ref.current;
+            console.log("test k" + element);
             let node, attribute;
 
-            return () => {
-
-                if (r_arr.length >= 1) {
-                    for (let i = 0; i < r_arr.length; i++) {
-                        node = document.createElement("p");
-                        node.className = "tag-attribute tag-required";
-                        attribute = document.createTextNode(`${r_arr[i]}`.trim());
-                        node.appendChild(attribute);
-                        element!.appendChild(node);
-                    }
+            if (r_arr.length >= 1) {
+                for (let i = 0; i < r_arr.length; i++) {
+                    node = document.createElement("p");
+                    node.className = "tag-attribute tag-required";
+                    attribute = document.createTextNode(`${r_arr[i]}`.trim());
+                    node.appendChild(attribute);
+                    element!.appendChild(node);
                 }
+            }
 
-                if (o_arr.length > 0) {
-                    for (let i = 0; i < o_arr.length; i++) {
-                        node = document.createElement("p");
-                        node.className = "tag-attribute tag-optional";
-                        attribute = document.createTextNode(`${o_arr[i]}`.trim());
-                        node.appendChild(attribute);
-                        element!.appendChild(node);
-                    }
+            if (o_arr.length > 0) {
+                for (let i = 0; i < o_arr.length; i++) {
+                    node = document.createElement("p");
+                    node.className = "tag-attribute tag-optional";
+                    attribute = document.createTextNode(`${o_arr[i]}`.trim());
+                    node.appendChild(attribute);
+                    element!.appendChild(node);
                 }
+            }
 
-                if (d_arr.length > 0) {
-                    for (let i = 0; i < d_arr.length; i++) {
-                        node = document.createElement("p");
-                        node.className = "tag-attribute tag-deprecated";
-                        attribute = document.createTextNode(`${d_arr[i]}`.trim());
-                        node.appendChild(attribute);
-                        element!.appendChild(node);
-                    }
+            if (d_arr.length > 0) {
+                for (let i = 0; i < d_arr.length; i++) {
+                    node = document.createElement("p");
+                    node.className = "tag-attribute tag-deprecated";
+                    attribute = document.createTextNode(`${d_arr[i]}`.trim());
+                    node.appendChild(attribute);
+                    element!.appendChild(node);
                 }
-            };
-        }, [ref]);
+            }
+        }, []);
 
 
     }
