@@ -17,17 +17,34 @@ export default function Attr({ required, optional, deprecated }: Props) {
             r_arr = []
         }
 
+        for (let i = 0; i < r_arr.length; i++) {r_arr[i] = r_arr[i].trim()}
+
+
         let o_string = optional!.toString();
         let o_arr = o_string.split(",");
         if (o_string == "") {
             o_arr = []
         }
 
+        for (let i = 0; i < o_arr.length; i++) {o_arr[i] = o_arr[i].trim()}
+
+
         let d_string = deprecated!.toString();
-        let d_arr = d_string.split(",");
+        let d_arr = d_string.split(", ");
         if (d_string == "") {
             d_arr = []
         }
+
+        for (let i = 0; i < d_arr.length; i++) {d_arr[i] = d_arr[i].trim()}
+
+
+        r_arr = r_arr.sort();
+        console.log(r_arr);
+        o_arr = o_arr.sort();
+        console.log(o_arr);
+
+        d_arr = d_arr.sort();
+        console.log(d_arr);
 
         useEffect(() => {
             const element = ref.current;
@@ -39,7 +56,7 @@ export default function Attr({ required, optional, deprecated }: Props) {
                     for (let i = 0; i < r_arr.length; i++) {
                         node = document.createElement("p");
                         node.className = "tag-attribute tag-required";
-                        attribute = document.createTextNode(`${r_arr[i]}`);
+                        attribute = document.createTextNode(`${r_arr[i]}`.trim());
                         node.appendChild(attribute);
                         element.appendChild(node);
                     }
@@ -49,7 +66,7 @@ export default function Attr({ required, optional, deprecated }: Props) {
                     for (let i = 0; i < o_arr.length; i++) {
                         node = document.createElement("p");
                         node.className = "tag-attribute tag-optional";
-                        attribute = document.createTextNode(`${o_arr[i]}`);
+                        attribute = document.createTextNode(`${o_arr[i]}`.trim());
                         node.appendChild(attribute);
                         element.appendChild(node);
                     }
@@ -59,7 +76,7 @@ export default function Attr({ required, optional, deprecated }: Props) {
                     for (let i = 0; i < d_arr.length; i++) {
                         node = document.createElement("p");
                         node.className = "tag-attribute tag-deprecated";
-                        attribute = document.createTextNode(`${d_arr[i]}`);
+                        attribute = document.createTextNode(`${d_arr[i]}`.trim());
                         node.appendChild(attribute);
                         element.appendChild(node);
                     }

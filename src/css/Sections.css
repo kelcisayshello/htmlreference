@@ -27,9 +27,9 @@
 
 .tag-attribute {
     display: inline-block;
-    margin: 0 0.3rem;
+    margin: 0.2rem 0.3rem;
     padding: 0 0.3rem;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .tag-optional {
@@ -48,10 +48,11 @@
     background-color: var(--green_light);
     color: var(--green_dark);
     border-radius: 2px;
+    width: 100%;
 }
 
 .tag-information tr, td {
-    padding: 5px;
+    padding: 3px;
     margin: 0;
     height: 0;
     font-weight: 500;
@@ -59,4 +60,13 @@
 
 .tag-information th {
     padding: 1rem;
+}
+
+.tag-link-container a {
+    color: var(--green_dark);
+    text-decoration: underline;
+}
+
+.tag-link-container, .tag-link-container a {
+    padding: 0;
 }

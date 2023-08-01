@@ -5,19 +5,20 @@ import Attr from "./Attribute"
 
 interface Props {
     element: string;
-    r_attr?: string;
-    o_attr?: string;
-    d_attr?: string;
+    required?: string;
+    optional?: string;
+    deprecated?: string;
     description: string;
+    url: string;
 }
 
-export function NoExample({ element, r_attr="", o_attr="", d_attr="", description }: Props) {
+export function NoExample({ element, required="", optional="", deprecated="", description, url }: Props) {
     return (
         <>
             <div className="tag-section">
                 <Label tag={element} />
-                <Attr required={r_attr} optional={o_attr} deprecated={d_attr} />
-                <Inform description={description} />
+                <Attr required={required} optional={optional} deprecated={deprecated} />
+                <Inform description={description} href={url}/>
             </div>
         </>
     );
