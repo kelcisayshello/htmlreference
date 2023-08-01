@@ -77,7 +77,9 @@ export default function Attr({ required, optional, deprecated }: Props) {
                     }
                 }
             };
-        }, []);
+        }, [ref]);
+
+
     }
 
     addAttributes();
