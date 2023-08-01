@@ -42,21 +42,25 @@ interface PropsE {
     src?: string;
     height?: string;
     width?: string;
+    dir?: string;
 
     // global tag attributes (optional)
     id?: string;
     style?: string;
     title?: string;
     data?: string;
+    value?: string;
 }
 
-export function Example({element, content=null, description, href, required="", optional="", deprecated="", mdn, src, height="", width=""}: PropsE){
+export function Example({element, content=null, title="", description, href, required="", optional="", deprecated="", mdn, src, height="", width="", dir, value=""}: PropsE){
 
     function CustomElement() {
         return createElement(
             `${element}`,
             {
-                // max: 100,
+                max: 100,
+                dir: `${dir}`,
+                title: `${title}`,
                 href: `${href}`,
                 target: "_blank",
                 src: `${src}`,
@@ -65,6 +69,7 @@ export function Example({element, content=null, description, href, required="", 
                 controls: true,
                 width: `${width}`,
                 height: `${height}`,
+                value: `${value}`,
             },
             `${content}`);
     }

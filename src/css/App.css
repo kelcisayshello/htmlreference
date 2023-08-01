@@ -126,7 +126,8 @@ caption {
 code {
   background-color: var(--green_light);
   color: var(--green_extra_dark);
-  padding: 0px 0.3rem;
+  padding: 0.1rem 0.3rem;
+  margin: 0 0.2rem;
   border: none;
   border-radius: 2px;
   font-family: 'Ubuntu Mono', monospace;
@@ -138,7 +139,7 @@ code {
 }
 
 data:hover::after {
-  content: ' (data: ' attr(value) ')';
+  content: ' (Machine-Readable ID = ' attr(value) ')';
   font-size: 0.7rem;
 }
 
@@ -161,6 +162,9 @@ del::before {
   color: #fbb;
 }
 
+hr {
+  border: 1px solid var(--green_light);
+}
 
 ins {
   display: block;
@@ -240,6 +244,10 @@ progress::-moz-progress-bar{
 
 time {
   font-weight: bold;
+}
+
+textarea {
+  width: 50%;
 }
 
 #wbr {

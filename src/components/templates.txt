@@ -7,7 +7,6 @@
 />
 
 <Example element=""
-	src=""
 	required=""
 	optional=""
 	deprecated=""

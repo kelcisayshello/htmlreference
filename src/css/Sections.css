@@ -12,6 +12,12 @@
     height: 152px;
 }
 
+
+.tag-section bdo {
+    text-align: right;
+    width: 100%;
+}
+
 .tag-label {
     color: var(--white);
     text-rendering: optimizeLegibility;
@@ -27,6 +33,14 @@
     min-height: 2.5rem;
     display: flex;
     align-items: center;
+}
+
+.tag-example.remove-flex {
+    display: block;
+}
+
+.tag-example.remove-flex br {
+    margin: 0;
 }
 
 .tag-attribute-container {
