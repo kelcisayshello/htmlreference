@@ -13,13 +13,15 @@ export default function Inform({ description, href }: Props) {
     return (
         <>
             <table className="tag-information">
-                <tr>
-                    <th><FontAwesomeIcon icon={faInfo} /></th>
-                    <td>
-                        <p className="tag-description">{description}</p>
-                        <p className="tag-link-container"><a target="_blank" href={url}>MDN Docs</a></p>
+                <tbody>
+                    <tr>
+                        <th><FontAwesomeIcon icon={faInfo} /></th>
+                        <td>
+                            <p className="tag-description">{description}</p>
+                            <p className="tag-link-container"><a target="_blank" href={url}>MDN Docs</a></p>
                         </td>
-                </tr>
+                    </tr>
+                </tbody>
             </table>
         </>
     );

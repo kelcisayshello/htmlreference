@@ -2,7 +2,7 @@ import "../css/Sections.css";
 import { NoExample } from "../components/Element";
 import Header from "../components/Header";
 
-export default function Containers() {
+export default function Container() {
     return (
         <>
             <Header header="Container" />
@@ -31,6 +31,18 @@ export default function Containers() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
             />
 
+            <NoExample element="footer"
+                description="The <footer> HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"
+            />
+
+            <NoExample element="form"
+                optional="accept-charset, autocomplete, name, rel, action, enctype, method, novalidate, target"
+                deprecated="accept"
+                description="The <form> HTML element represents a document section containing interactive controls for submitting information."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+            />
+
             <NoExample element="main"
                 description="The <main> HTML element represents the dominant content of the <body> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"
@@ -49,14 +61,15 @@ export default function Containers() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output"
             />
 
+
+            <NoExample element="search"
+                description="The <search> HTML element is a container representing the parts of the document or application with form controls or other content related to performing a search or filtering operation. The <search> element semantically identifies the purpose of the element's contents as having search or filtering capabilities."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search"
+            />
+
             <NoExample element="section"
                 description="The <section> HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
-            />
-
-            <NoExample element="footer"
-                description="The <footer> HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents."
-                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"
             />
 
         </>

@@ -1,6 +1,8 @@
 import { Example } from "../components/Element";
 import Header from "../components/Header";
 import Label from "../components/Label";
+import { Table } from "../components/ElementExamples";
+
 import Attr from "../components/Attribute";
 import Inform from "../components/Inform";
 import "../css/Sections.css";
@@ -75,6 +77,15 @@ export default function Media() {
                     <p>This is sample text before a <code>&lt;br&gt;</code> element.</p>
                     <br />
                     <p>This is sample text after a <code>&lt;br&gt;</code> element.</p>
+                </div>
+            </div>
+
+            <div className="tag-section">
+                <Label tag="caption" />
+                <Attr deprecated="align" />
+                <Inform description="The <caption> HTML element specifies the caption (or title) of a table." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption" />
+                <div className="tag-example remove-flex">
+                    <Table />
                 </div>
             </div>
 
@@ -235,6 +246,15 @@ export default function Media() {
             />
 
             <div className="tag-section">
+                <Label tag="table" />
+                <Attr deprecated="align, bgcolor, border, cellpadding, cellspacing, frame, rules, summary, width" />
+                <Inform description="The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" />
+                <div className="tag-example remove-flex">
+                    <Table />
+                </div>
+            </div>
+
+            <div className="tag-section">
                 <Label tag="sub" />
                 <Attr />
                 <Inform description="The <sub> HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" />
@@ -261,7 +281,7 @@ export default function Media() {
 
             <div className="tag-section">
                 <Label tag="time" />
-                <Attr optional="datetime"/>
+                <Attr optional="datetime" />
                 <Inform description="The <time> HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" />
                 <div className="tag-example remove-flex">
                     <p>This sample text contains today's date which is <b><time dateTime={currentDate}>{currentDate}</time></b>.</p>
@@ -274,7 +294,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u"
             />
 
-<div className="tag-section">
+            <div className="tag-section">
                 <Label tag="var" />
                 <Attr />
                 <Inform description="The <var> HTML element represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" />
