@@ -288,7 +288,7 @@ export default function Media() {
                 <Attr />
                 <Inform description="The <wbr> HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" />
                 <div className="tag-example remove-flex">
-                    <p>This sample text contains a word break opportunity after <wbr>word</wbr>, however it might not be apparent because there is not enough text filling the example space to demonstrate this concept.</p>
+                    <p>This sample text contains a word break opportunity after word<wbr />, however it might not be apparent because there is not enough text filling the example space to demonstrate this concept.</p>
                 </div>
             </div>
 
