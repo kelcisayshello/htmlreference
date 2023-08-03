@@ -98,3 +98,7 @@
 .tag-link-container, .tag-link-container a {
     padding: 0;
 }
+
+.display-inline-block {
+    display: inline-block;
+}

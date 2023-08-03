@@ -1,7 +1,7 @@
-import { Example } from "../components/Element";
+import { Example, NoExample } from "../components/Element";
 import Header from "../components/Header";
 import Label from "../components/Label";
-import { Table } from "../components/ElementExamples";
+import { Table, List } from "../components/ElementExamples";
 
 import Attr from "../components/Attribute";
 import Inform from "../components/Inform";
@@ -80,14 +80,11 @@ export default function Media() {
                 </div>
             </div>
 
-            <div className="tag-section">
-                <Label tag="caption" />
-                <Attr deprecated="align" />
-                <Inform description="The <caption> HTML element specifies the caption (or title) of a table." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption" />
-                <div className="tag-example remove-flex">
-                    <Table />
-                </div>
-            </div>
+            <NoExample element="caption"
+                deprecated="align"
+                description="The <caption> HTML element specifies the caption (or title) of a table."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption"
+            />
 
             <Example element="cite"
                 content="This sample text is marked as a citation."
@@ -180,6 +177,13 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"
             />
 
+            <NoExample element="li"
+                optional="value"
+                deprecated="type"
+                description="The <li> HTML element is used to represent an item in a list. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li"
+            />
+
             <Example element="mark"
                 content="This sample text has been marked."
                 description="The <mark> HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context."
@@ -194,6 +198,15 @@ export default function Media() {
                 description="The <meter> HTML element represents either a scalar value within a known range or a fractional value."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter"
             />
+
+            <div className="tag-section">
+                <Label tag="menu" />
+                <Attr deprecated="align, bgcolor, border, cellpadding, cellspacing, frame, rules, summary, width" />
+                <Inform description="The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" />
+                <div className="tag-example remove-flex">
+                    <List element="menu" />
+                </div>
+            </div>
 
             <Example element="p"
                 content="This sample text is a paragraph element."
@@ -263,6 +276,11 @@ export default function Media() {
                 </div>
             </div>
 
+            <NoExample element="summary"
+                description="The <summary> HTML element specifies a summary, caption, or legend for a <details> element's disclosure box. Clicking the <summary> element toggles the state of the parent <details> element open and closed."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"
+            />
+
             <div className="tag-section">
                 <Label tag="sup" />
                 <Attr />
@@ -293,6 +311,15 @@ export default function Media() {
                 description="The <u> HTML element represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u"
             />
+
+            <div className="tag-section">
+                <Label tag="ul" />
+                <Attr deprecated="compact, type" />
+                <Inform description="The <ul> HTML element represents an unordered list of items, typically rendered as a bulleted list." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" />
+                <div className="tag-example remove-flex">
+                    <List element="ul" />
+                </div>
+            </div>
 
             <div className="tag-section">
                 <Label tag="var" />

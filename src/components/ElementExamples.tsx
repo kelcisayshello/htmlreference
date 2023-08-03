@@ -1,3 +1,5 @@
+import { createElement } from "react";
+
 export function Table() {
     return (
         <>
@@ -44,15 +46,52 @@ export function Table() {
     );
 }
 
-export function DataList() {
+export function OptGroup() {
     return (
         <>
-            <datalist className="m-top-btm" id="colors">
-                <option value="red">red</option>
-                <option value="r">r</option>
-
-                <option value="w">w</option>
-            </datalist>
+            <label htmlFor="select-colors">Please select a color: </label>
+            <select className="m-top-btm" name="colors" id="select-colors">
+                <optgroup label="Warm Colors">
+                    <option value="orange">orange</option>
+                    <option value="yellow">yellow</option>
+                    <option value="red">red</option>
+                </optgroup>
+                <optgroup label="Cool Colors">
+                    <option value="green">green</option>
+                </optgroup>
+                <option value="white">white</option>
+            </select>
         </>
     );
 }
+
+export function FieldSet() {
+    return (
+        <>
+            <fieldset className="m-top-btm">
+                <legend>Choose your favorite color</legend>
+
+                <input type="radio" id="green" name="color" />
+                <label htmlFor="green">green</label>
+
+                <br />
+
+                <input type="radio" id="yellow" name="color" />
+                <label htmlFor="yellow">yellow</label>
+
+                <br />
+
+                <input type="radio" id="red" name="color" />
+                <label htmlFor="red">red</label>
+            </fieldset>
+        </>
+    );
+}
+
+export function List({ element }: {element: string }) {
+    return createElement(
+      `${element}`,
+      { className: 'm-top-btm' },
+      createElement('li', {className: "remove-flex display-inline-block"}, 'This sample text is an <li> element for'), createElement('p', {className: "display-inline-block"}, `${'\u00A0'}${element}`)
+    );
+  }

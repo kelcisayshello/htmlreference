@@ -209,6 +209,11 @@ label {
   margin-right: 0.6rem;
 }
 
+/* li:before {
+  content: '\00a0•\00a0';
+} */
+
+
 mark {
   background-color: var(--orange_burnt);
   color: var(--white)!important;
