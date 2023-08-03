@@ -1,4 +1,4 @@
-import { Example } from "../components/Element";
+import { Example, NoExample } from "../components/Element";
 import Header from "../components/Header";
 import Label from "../components/Label";
 import Attr from "../components/Attribute";
@@ -14,6 +14,13 @@ export default function Media() {
     return (
         <>
             <Header header="Media" />
+
+            <NoExample element="area"
+                optional="alt, coords, download, href, ping, referrerpolicy, rel, shape, target"
+                deprecated="name, nohref, type, hreflang"
+                description="The <area> HTML element defines an area inside an image map that has predefined clickable areas. An image map allows geometric areas on an image to be associated with hypertext links. This element is used only within a <map> element."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area"
+            />
 
             <Example element="audio"
                 src={example_audio}
@@ -31,8 +38,17 @@ export default function Media() {
                         src="https://www.youtube-nocookie.com/embed/NWeyUpqnKuk?controls=1" width="560"
                         height="315" />
                 </div>
-
             </div>
+
+            <NoExample element="figcaption"
+                description="The <figcaption> HTML element represents a caption or legend describing the rest of the contents of its parent <figure> element."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"
+            />
+
+            <NoExample element="figure"
+                description="The <figure> HTML element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element. The figure, its caption, and its contents are referenced as a single unit."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"
+            />
 
             <Example element="iframe"
                 src="https://open.spotify.com/embed/track/6ZDPPl5r7f89l1k5M7ozZe?utm_source=generator"

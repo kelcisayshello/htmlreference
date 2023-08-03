@@ -2,9 +2,9 @@ import { Example, NoExample } from "../components/Element";
 import Header from "../components/Header";
 import Label from "../components/Label";
 import { Table, List } from "../components/ElementExamples";
-
 import Attr from "../components/Attribute";
 import Inform from "../components/Inform";
+
 import "../css/Sections.css";
 
 export default function Media() {
@@ -98,12 +98,30 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code"
             />
 
+            <NoExample element="col"
+                deprecated="align, bgcolor, char, charoff, valign, width"
+                description="The <col> HTML element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <colgroup> element."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col"
+            />
+
+            <NoExample element="colgroup"
+                deprecated="align, bgcolor, char, charoff, valign"
+                description="The <colgroup> HTML element defines a group of columns within a table."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup"
+            />
+
             <Example element="data"
                 required="value"
                 value="?"
                 content="Hover Me."
                 description="The <data> HTML element links a given piece of content with a machine-readable translation. If the content is time- or date-related, the <time> element must be used."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data"
+            />
+
+            <NoExample element="dd"
+                deprecated="nowrap"
+                description="The <dd> HTML element provides the description, definition, or value for the preceding term (<dt>) in a description list (<dl>)."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd"
             />
 
             <Example element="del"
@@ -125,6 +143,26 @@ export default function Media() {
                 optional="open"
                 description="The <details> HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an 'open' state."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"
+            />
+
+            <div className="tag-section">
+                <Label tag="dl" />
+                <Attr />
+                <Inform description="The <dl> HTML element represents a description list. The element encloses a list of groups of terms (specified using the <dt> element) and descriptions (provided by <dd> elements)." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" />
+                <div className="tag-example">
+                    <dl>
+                        <dt>Description Term 1</dt>
+                        <dd>The <code>&lt;dd&gt;</code> element provides the description, definition, or value for a term in a description list.</dd>
+
+                        <dt>Description Term 2</dt>
+                        <dd>This <code>&lt;dd&gt;</code> element is different than the previous one.</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <NoExample element="dt"
+                description="The <dt> HTML element specifies a term in a description or definition list, and as such must be used inside a <dl> element. It is usually followed by a <dd> element; however, multiple <dt> elements in a row indicate several terms that are all defined by the immediate next <dd> element."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt"
             />
 
             <Example element="em"
@@ -184,6 +222,12 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li"
             />
 
+            <NoExample element="map"
+                required="name"
+                description="The <map> HTML element is used with <area> elements to define an image map (a clickable link area)."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map"
+            />
+
             <Example element="mark"
                 content="This sample text has been marked."
                 description="The <mark> HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context."
@@ -208,6 +252,15 @@ export default function Media() {
                 </div>
             </div>
 
+            <div className="tag-section">
+                <Label tag="ol" />
+                <Attr optional="reversed, start, type" />
+                <Inform description="The <ol> HTML element represents an ordered list of items — typically rendered as a numbered list." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" />
+                <div className="tag-example remove-flex">
+                    <List element="ol" />
+                </div>
+            </div>
+
             <Example element="p"
                 content="This sample text is a paragraph element."
                 description="The <meter> HTML element represents either a scalar value within a known range or a fractional value."
@@ -227,6 +280,27 @@ export default function Media() {
                 description="The <q> HTML element indicates that the enclosed text is a short inline quotation."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"
             />
+
+            <NoExample element="rp"
+                description="The <rp> HTML element is used to provide fall-back parentheses for browsers that do not support display of ruby annotations using the <ruby> element. One <rp> element should enclose each of the opening and closing parentheses that wrap the <rt> element that contains the annotation's text."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp"
+            />
+
+            <NoExample element="rt"
+                description="The <rt> HTML element specifies the ruby text component of a ruby annotation, which is used to provide pronunciation, translation, or transliteration information for East Asian typography. The <rt> element must always be contained within a <ruby> element."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt"
+            />
+
+            <div className="tag-section">
+                <Label tag="ruby" />
+                <Attr />
+                <Inform description="The <ruby> HTML element represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" />
+                <div className="tag-example">
+                    <ruby className="m-top-btm" style={{ fontSize: "1.5rem" }}>
+                        明日 <rp>(</rp><rt>ashita</rt><rp>)</rp>
+                    </ruby>
+                </div>
+            </div>
 
             <Example element="s"
                 content="This sample text is in a strikethrough element."
@@ -266,6 +340,43 @@ export default function Media() {
                     <Table />
                 </div>
             </div>
+
+            <NoExample element="tbody"
+                deprecated="align, bgcolor, char, charoff, valign"
+                description="The <tbody> HTML element encapsulates a set of table rows (<tr> elements), indicating that they comprise the body of the table (<table>)."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody"
+            />
+
+            <NoExample element="td"
+                optional="colspan, headers, rowspan"
+                deprecated="abbr, align, axis, bgcolor, char, charoff, height, scope, valign, width"
+                description="The <td> HTML element defines a cell of a table that contains data. It participates in the table model."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td"
+            />
+
+            <NoExample element="tfoot"
+                deprecated="align, bgcolor, char, charoff, valign"
+                description="The <tfoot> HTML element defines a set of rows summarizing the columns of the table."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot"
+            />
+
+            <NoExample element="th"
+                deprecated="align, bgcolor, char, charoff, valign"
+                description="The <th> HTML element defines a cell as the header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th"
+            />
+
+            <NoExample element="thead"
+                deprecated="align, bgcolor, char, charoff, valign"
+                description="The <thead> HTML element defines a set of rows defining the head of the columns of the table."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead"
+            />
+
+            <NoExample element="tr"
+                deprecated="align, bgcolor, char, charoff, valign"
+                description="The <tr> HTML element defines a row of cells in a table. The row's cells can then be established using a mix of <td> (data cell) and <th> (header cell) elements."
+                mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr"
+            />
 
             <div className="tag-section">
                 <Label tag="sub" />
@@ -335,7 +446,7 @@ export default function Media() {
                 <Attr />
                 <Inform description="The <wbr> HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" />
                 <div className="tag-example remove-flex">
-                    <p>This sample text contains a word break opportunity after word<wbr />, however it might not be apparent because there is not enough text filling the example space to demonstrate this concept.</p>
+                    <p>This sample text contains a word break opportunity after <i>this</i><wbr />, however it might not be apparent to the user because there is not enough text filling the example space to demonstrate this concept.</p>
                 </div>
             </div>
 

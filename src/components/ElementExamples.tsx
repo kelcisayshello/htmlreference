@@ -88,10 +88,10 @@ export function FieldSet() {
     );
 }
 
-export function List({ element }: {element: string }) {
+export function List({ element }: { element: string }) {
     return createElement(
-      `${element}`,
-      { className: 'm-top-btm' },
-      createElement('li', {className: "remove-flex display-inline-block"}, 'This sample text is an <li> element for'), createElement('p', {className: "display-inline-block"}, `${'\u00A0'}${element}`)
+        `${element}`,
+        { className: 'm-top-btm display-flex' },
+        createElement('li', { className: "" }, 'This sample text is an <li> element for'), createElement('li', { className: "list-style-type-none" }, `${element}`)
     );
-  }
+}

@@ -28,7 +28,7 @@
     color: var(--green_light);
     border: 2px dashed var(--green_extra_dark);
     border-radius: 2px;
-    padding: 0 0.6rem;
+    padding: 0 1.1rem;
     min-height: 2.5rem;
     display: flex;
     align-items: center;
@@ -99,6 +99,11 @@
     padding: 0;
 }
 
-.display-inline-block {
-    display: inline-block;
+.display-flex {
+    display: flex;
+}
+
+.list-style-type-none {
+    list-style-type: none;
+    margin: 0 0.2rem;
 }
