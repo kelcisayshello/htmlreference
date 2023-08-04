@@ -11,7 +11,7 @@ Thanks!
 <br><br>
 
 ## Elements
-🔵 void, 🟠 requires content
+🔵 void
 ### Container
 * article
 * aside
