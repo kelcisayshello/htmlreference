@@ -9,7 +9,6 @@ interface Props {
 
 export default function Attr({ required="", optional="", deprecated="" }: Props) {
     const ref = useRef<HTMLDivElement>(null);
-    // console.log("test i" + ref);
 
     function addAttributes() {
         let noAttributes: boolean = false;  // defaulted to false meaning there might be some attributes

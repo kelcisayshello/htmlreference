@@ -2,8 +2,8 @@ import Container from "./sections/Container";
 import Media from "./sections/Media";
 import Typography from "./sections/Typography";
 import Form from "./sections/Form";
-import "./css/App.css";
 import Miscellaneous from "./sections/Miscellaneous";
+import "./css/App.css";
 
 function App() {
   const date = new Date();
