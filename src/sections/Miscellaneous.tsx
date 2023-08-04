@@ -1,6 +1,6 @@
-import "../css/Sections.css";
 import { NoExample } from "../components/Element";
 import Header from "../components/Header";
+import "../css/Sections.css";
 
 export default function Miscellaneous() {
     return (
@@ -26,7 +26,6 @@ export default function Miscellaneous() {
                 description="The <dialog> HTML element represents a dialog box or other interactive component, such as a dismissible alert, inspector, or sub-window."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"
             />
-
 
             <NoExample element="head"
                 deprecated="profile"

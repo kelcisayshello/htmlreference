@@ -7,79 +7,86 @@ interface Props {
     deprecated?: React.ReactNode;
 }
 
-export default function Attr({ required="", optional="", deprecated="" }: Props) {
+export default function Attr({ required = "", optional = "", deprecated = "" }: Props) {
     const ref = useRef<HTMLDivElement>(null);
 
+    /**
+     * Converts a given string of attributes separated by commas into an array then 
+     * alphabetically sorts it.
+     * 
+     * @returns corresponding inline <p> items with the appropriate CSS attribute class.
+     */
     function addAttributes() {
-        let noAttributes: boolean = false;  // defaulted to false meaning there might be some attributes
+        let noAttributes: boolean = false;  // defaulted to false
 
-        const r_string = required!.toString();
-        let r_arr = r_string.split(",");
+        const requiredString = required!.toString();
+        const optionalString = optional!.toString();
+        const deprecatedString = deprecated!.toString();
 
-        // if no attributes inputted, you should actually empty the array
-        if (r_string == "") {
-            r_arr = []
-        }
+        // (1) converts parameter strings to array
+        let requiredArray = requiredString.split(",");
+        let optionalArray = optionalString.split(",");
+        let deprecatedArray = deprecatedString.split(", ");
 
-        let o_string = optional!.toString();
-        let o_arr = o_string.split(",");
-        if (o_string == "") {
-            o_arr = [];
-        }
+        // (2) properly sets empty strings to empty array
+        if (requiredString == "") { requiredArray = [] }
+        if (optionalString == "") { optionalArray = []; }
+        if (deprecatedString == "") { deprecatedArray = [] }
 
-        let d_string = deprecated!.toString();
-        let d_arr = d_string.split(", ");
-        if (d_string == "") { d_arr = [] }
-
-        if (d_arr.length + o_arr.length + r_arr.length == 0) {
+        // (3) set noAttributes variable to true if all three parameter strings are empty (HTML element has no attributes)
+        if (deprecatedArray.length + optionalArray.length + requiredArray.length == 0) {
             noAttributes = true
         }
 
-        if (noAttributes == false) {    // add attribute badges if there is some badge
-            for (let i = 0; i < r_arr.length; i++) { r_arr[i] = r_arr[i].trim() }
-            for (let i = 0; i < o_arr.length; i++) { o_arr[i] = o_arr[i].trim() }
-            for (let i = 0; i < d_arr.length; i++) { d_arr[i] = d_arr[i].trim() }
+        // (4) convert attribute(s) to <p> if HTML element has at least one attribute 
+        if (noAttributes == false) { 
 
-            r_arr = r_arr.sort();
-            o_arr = o_arr.sort();
-            d_arr = d_arr.sort();
+            // (4.1) use trim() to remove whitespaces preserved from split()
+            for (let i = 0; i < requiredArray.length; i++) { requiredArray[i] = requiredArray[i].trim() }
+            for (let i = 0; i < optionalArray.length; i++) { optionalArray[i] = optionalArray[i].trim() }
+            for (let i = 0; i < deprecatedArray.length; i++) { deprecatedArray[i] = deprecatedArray[i].trim() }
 
+            // (4.2) alphabetically sort attribute arrays
+            requiredArray = requiredArray.sort();
+            optionalArray = optionalArray.sort();
+            deprecatedArray = deprecatedArray.sort();
+
+            // (4.3) place corresponding <p> element in attributes <div> with useEffect() hook
             useEffect(() => {
                 const element = ref.current;
-                // console.log("test k" + element);
                 let node, attribute;
 
-                if (r_arr.length >= 1) {
-                    for (let i = 0; i < r_arr.length; i++) {
+                if (requiredArray.length >= 1) {
+                    for (let i = 0; i < requiredArray.length; i++) {
                         node = document.createElement("p");
                         node.className = "tag-attribute tag-required";
-                        attribute = document.createTextNode(`${r_arr[i]}`.trim());
+                        attribute = document.createTextNode(`${requiredArray[i]}`.trim());
                         node.appendChild(attribute);
                         element!.appendChild(node);
                     }
                 }
 
-                if (o_arr.length > 0) {
-                    for (let i = 0; i < o_arr.length; i++) {
+                if (optionalArray.length > 0) {
+                    for (let i = 0; i < optionalArray.length; i++) {
                         node = document.createElement("p");
                         node.className = "tag-attribute tag-optional";
-                        attribute = document.createTextNode(`${o_arr[i]}`.trim());
+                        attribute = document.createTextNode(`${optionalArray[i]}`.trim());
                         node.appendChild(attribute);
                         element!.appendChild(node);
                     }
                 }
 
-                if (d_arr.length > 0) {
-                    for (let i = 0; i < d_arr.length; i++) {
+                if (deprecatedArray.length > 0) {
+                    for (let i = 0; i < deprecatedArray.length; i++) {
                         node = document.createElement("p");
                         node.className = "tag-attribute tag-deprecated";
-                        attribute = document.createTextNode(`${d_arr[i]}`.trim());
+                        attribute = document.createTextNode(`${deprecatedArray[i]}`.trim());
                         node.appendChild(attribute);
                         element!.appendChild(node);
                     }
                 }
             }, []);
-        } else {
+        } else {    // (5) if element has no attributes, place a <p> with word "none"
             useEffect(() => {
                 const element = ref.current;
                 let node, attribute;
@@ -92,7 +99,7 @@ export default function Attr({ required="", optional="", deprecated="" }: Props)
             }, []);
         }
     }
-
+    // (6) calls addAttribute() function 
     addAttributes();
 
     return (

@@ -1,6 +1,6 @@
-import "../css/Sections.css";
 import { NoExample } from "../components/Element";
 import Header from "../components/Header";
+import "../css/Sections.css";
 
 export default function Container() {
     return (
@@ -71,7 +71,6 @@ export default function Container() {
                 description="The <section> HTML element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
             />
-
         </>
     );
 }

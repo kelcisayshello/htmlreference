@@ -4,11 +4,11 @@ import { faInfo } from '@fortawesome/free-solid-svg-icons'
 
 interface Props {
     description: React.ReactNode;
-    href: React.ReactNode;
+    mdn: React.ReactNode;
 }
 
-export default function Inform({ description, href }: Props) {
-    const url = href!.toString();
+export default function Inform({ description, mdn }: Props) {
+    const url = mdn!.toString();
 
     return (
         <>

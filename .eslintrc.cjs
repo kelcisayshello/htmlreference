@@ -12,7 +12,6 @@ module.exports = {
     'react-refresh',
     "@typescript-eslint/eslint-plugin",
     "eslint-plugin-tsdoc",
-
   ],
   rules: {
     'react-refresh/only-export-components': [

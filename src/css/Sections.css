@@ -1,5 +1,4 @@
 .tag-section {
-    /* border: 1px solid peachpuff; */
     margin: 3rem 0 0.5rem;
     padding: 0;
 }
@@ -7,8 +6,6 @@
 .tag-section iframe {
     border: none;
     width: 100%;
-    /* display: flexbox; */
-    /* margin-bottom: 0; */
     height: 152px;
 }
 

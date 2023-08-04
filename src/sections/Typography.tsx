@@ -1,10 +1,9 @@
 import { Example, NoExample } from "../components/Element";
+import { Table, List } from "../components/ElementExamples";
 import Header from "../components/Header";
 import Label from "../components/Label";
-import { Table, List } from "../components/ElementExamples";
 import Attr from "../components/Attribute";
 import Inform from "../components/Inform";
-
 import "../css/Sections.css";
 
 export default function Media() {
@@ -72,7 +71,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="br" />
                 <Attr deprecated="clear" />
-                <Inform description="The <br> HTML element produces a line break in text (carriage-return)." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" />
+                <Inform description="The <br> HTML element produces a line break in text (carriage-return)." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" />
                 <div className="tag-example remove-flex">
                     <p>This is sample text before a <code>&lt;br&gt;</code> element.</p>
                     <br />
@@ -148,7 +147,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="dl" />
                 <Attr />
-                <Inform description="The <dl> HTML element represents a description list. The element encloses a list of groups of terms (specified using the <dt> element) and descriptions (provided by <dd> elements)." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" />
+                <Inform description="The <dl> HTML element represents a description list. The element encloses a list of groups of terms (specified using the <dt> element) and descriptions (provided by <dd> elements)." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" />
                 <div className="tag-example">
                     <dl>
                         <dt>Description Term 1</dt>
@@ -174,7 +173,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="h1 - h6" />
                 <Attr />
-                <Inform description="The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" />
+                <Inform description="The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" />
                 <div className="tag-example remove-flex">
                     <h1>The Hare and the Tortoise</h1>
                     <h2>The Hare and the Tortoise</h2>
@@ -188,7 +187,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="h2" />
                 <Attr />
-                <Inform description="The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" />
+                <Inform description="The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" />
                 <div className="tag-example remove-flex">
                     <p>This is sample text before an <code>&lt;hr&gt;</code> element.</p>
                     <hr />
@@ -246,7 +245,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="menu" />
                 <Attr deprecated="align, bgcolor, border, cellpadding, cellspacing, frame, rules, summary, width" />
-                <Inform description="The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" />
+                <Inform description="The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" />
                 <div className="tag-example remove-flex">
                     <List element="menu" />
                 </div>
@@ -255,7 +254,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="ol" />
                 <Attr optional="reversed, start, type" />
-                <Inform description="The <ol> HTML element represents an ordered list of items — typically rendered as a numbered list." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" />
+                <Inform description="The <ol> HTML element represents an ordered list of items — typically rendered as a numbered list." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" />
                 <div className="tag-example remove-flex">
                     <List element="ol" />
                 </div>
@@ -294,7 +293,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="ruby" />
                 <Attr />
-                <Inform description="The <ruby> HTML element represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" />
+                <Inform description="The <ruby> HTML element represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" />
                 <div className="tag-example">
                     <ruby className="m-top-btm" style={{ fontSize: "1.5rem" }}>
                         明日 <rp>(</rp><rt>ashita</rt><rp>)</rp>
@@ -335,7 +334,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="table" />
                 <Attr deprecated="align, bgcolor, border, cellpadding, cellspacing, frame, rules, summary, width" />
-                <Inform description="The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" />
+                <Inform description="The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" />
                 <div className="tag-example remove-flex">
                     <Table />
                 </div>
@@ -381,7 +380,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="sub" />
                 <Attr />
-                <Inform description="The <sub> HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" />
+                <Inform description="The <sub> HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" />
                 <div className="tag-example remove-flex">
                     <p>This sample text has a <sub>&lt;sub&gt;</sub> element.</p>
                 </div>
@@ -395,7 +394,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="sup" />
                 <Attr />
-                <Inform description="The <sup> HTML element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" />
+                <Inform description="The <sup> HTML element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" />
                 <div className="tag-example remove-flex">
                     <p>This sample text has a <sup>&lt;sup&gt;</sup> element.</p>
                 </div>
@@ -411,7 +410,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="time" />
                 <Attr optional="datetime" />
-                <Inform description="The <time> HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" />
+                <Inform description="The <time> HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" />
                 <div className="tag-example remove-flex">
                     <p>This sample text contains today's date which is <b><time dateTime={currentDate}>{currentDate}</time></b>.</p>
                 </div>
@@ -426,7 +425,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="ul" />
                 <Attr deprecated="compact, type" />
-                <Inform description="The <ul> HTML element represents an unordered list of items, typically rendered as a bulleted list." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" />
+                <Inform description="The <ul> HTML element represents an unordered list of items, typically rendered as a bulleted list." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" />
                 <div className="tag-example remove-flex">
                     <List element="ul" />
                 </div>
@@ -435,7 +434,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="var" />
                 <Attr />
-                <Inform description="The <var> HTML element represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" />
+                <Inform description="The <var> HTML element represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" />
                 <div className="tag-example remove-flex">
                     <p>This sample text contains a variable <var>k</var>.</p>
                 </div>
@@ -444,7 +443,7 @@ export default function Media() {
             <div className="tag-section">
                 <Label tag="var" />
                 <Attr />
-                <Inform description="The <wbr> HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location." href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" />
+                <Inform description="The <wbr> HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" />
                 <div className="tag-example remove-flex">
                     <p>This sample text contains a word break opportunity after <i>this</i><wbr />, however it might not be apparent to the user because there is not enough text filling the example space to demonstrate this concept.</p>
                 </div>

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 /* ---------------------------------- ROOT ---------------------------------- */
 :root {
@@ -12,7 +11,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  /* theme colors */
+  /* default theme colors */
   --green_dark: #004643;
   --green_extra_dark: #001e1d;
   --green_light: #abd1c6;
@@ -47,14 +46,6 @@ h1.site-title {
   margin: 2rem 0px 0px;
 }
 
-div.app-container {
-  overflow-x: none;
-  font-family: 'Open Sans', sans-serif;
-
-  padding: 0px 0px 2rem;
-  font-weight: 400;
-}
-
 h2.site-header {
   background-color: var(--yellow);
   padding: 0.5rem;
@@ -68,6 +59,13 @@ h2.site-header {
 h2.site-header::selection {
   background: var(--green_dark);
   color: var(--yellow);
+}
+
+div.app-container {
+  overflow-x: none;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px 0px 2rem;
+  font-weight: 400;
 }
 
 footer.site-footer {
@@ -143,7 +141,6 @@ code {
   border: 1px solid red;
   width: 100%;
 }
-
 
 data:hover::after {
   content: ' (Machine-Readable ID = ' attr(value) ')';
@@ -226,7 +223,6 @@ pre {
 }
 
 progress {
-  /* background-color: var(--yellow); */
   background-color: var(--green_dark);
   border: 0.5px solid var(--yellow);
   border-radius: 1px;
@@ -237,7 +233,6 @@ progress::-webkit-progress-bar {
   background-color: var(--green_dark);
   border: 0.5px solid var(--yellow);
   border-radius: 1px;
-
 }
 
 progress::-webkit-progress-value {
@@ -279,10 +274,6 @@ textarea {
 /* ----------------------------- COMMON CLASSES ----------------------------- */
 .font-bowlby {
   font-family: 'Bowlby One', cursive;
-}
-
-.font-ubuntu {
-  font-family: 'Ubuntu Mono', monospace;
 }
 
 .font-italics {
