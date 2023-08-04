@@ -11,6 +11,7 @@ Thanks!
 <br><br>
 
 ## Elements
+legend: 🔵 void, 🟠 requires content
 ### Container
 * article
 * aside
@@ -28,7 +29,7 @@ Thanks!
 * datalist
 * fieldset
 * form (also in container)
-* input
+* input 🔵
 * label
 * legend
 * optgroup
@@ -37,33 +38,33 @@ Thanks!
 * search (also in container)
 * select
 ### Media
-* area
+* area 🔵
 * audio
-* embed
+* embed 🔵
 * figcaption
 * figure
 * iframe
-* img
+* img 🔵
 * map
 * object
 * picture
 * video
 ### Miscellaneous
-* base
+* base 🔵
 * canvas
 * dialog
 * head
 * header
 * html
-* link
-* meta
+* link 🔵
+* meta 🔵
 * noscript
 * slot
-* source
+* source 🔵
 * style
 * template
 * title
-* track
+* track 🔵
 ### Typography
 * a
 * abbr
@@ -72,11 +73,11 @@ Thanks!
 * blockquote
 * bdi
 * bdo
-* br
+* br 🔵
 * caption
 * cite
 * code
-* col
+* col 🔵
 * colgroup
 * data
 * dd
@@ -88,7 +89,7 @@ Thanks!
 * em
 * h1 - h6
 * hgroup
-* hr
+* hr 🔵
 * i
 * ins
 * kbd
@@ -121,4 +122,4 @@ Thanks!
 * u
 * ul
 * var
-* wbr
+* wbr 🔵
