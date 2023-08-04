@@ -1,8 +1,8 @@
 # HTML Reference
 Latest version (`v1.0`) released 3 August 2023
 
-### Upcoming Features
-Please <a href="https://kelcisayshello.notion.site/0667e2d701a54363a38e87b5dac46c18?v=6d7fffe0a2294eae829ef47d9113c5d9&pvs=4" target="_blank">click here</a> for an up-to-date Notion list of upcoming features.
+### Upcoming Features and Fixes
+Please <a href="https://kelcisayshello.notion.site/0667e2d701a54363a38e87b5dac46c18?v=6d7fffe0a2294eae829ef47d9113c5d9&pvs=4">click here</a> for an up-to-date Notion list of upcoming features and fixes.
 
 ## Elements
 ### Container
