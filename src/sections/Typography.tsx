@@ -7,7 +7,6 @@ import Inform from "../components/Inform";
 import "../css/Sections.css";
 
 export default function Media() {
-
     const date = new Date();
     let currentDate = date.toLocaleString('en', { day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -448,7 +447,6 @@ export default function Media() {
                     <p>This sample text contains a word break opportunity after <i>this</i><wbr />, however it might not be apparent to the user because there is not enough text filling the example space to demonstrate this concept.</p>
                 </div>
             </div>
-
         </>
     );
 }

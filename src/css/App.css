@@ -295,3 +295,20 @@ textarea {
 .m-btm-large {
   margin-bottom: 4.5rem;
 }
+
+.display {
+  display: block;
+}
+
+.display-none {
+  display: none
+}
+
+.display-flex {
+  display: flex;
+}
+
+.list-style-type-none {
+  list-style-type: none;
+  margin: 0 0.2rem;
+}

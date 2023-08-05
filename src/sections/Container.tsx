@@ -61,7 +61,6 @@ export default function Container() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output"
             />
 
-
             <NoExample element="search"
                 description="The <search> HTML element is a container representing the parts of the document or application with form controls or other content related to performing a search or filtering operation. The <search> element semantically identifies the purpose of the element's contents as having search or filtering capabilities."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search"

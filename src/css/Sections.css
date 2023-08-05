@@ -95,12 +95,3 @@
 .tag-link-container, .tag-link-container a {
     padding: 0;
 }
-
-.display-flex {
-    display: flex;
-}
-
-.list-style-type-none {
-    list-style-type: none;
-    margin: 0 0.2rem;
-}
