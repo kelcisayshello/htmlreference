@@ -28,7 +28,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio"
             />
 
-            <div className="tag-section">
+            {/* <div className="tag-section">
                 <Label tag="embed" />
                 <Attr required="src, type" optional="height, width" />
                 <Inform description="The <embed> HTML element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed" />
@@ -37,7 +37,7 @@ export default function Media() {
                         src="https://www.youtube-nocookie.com/embed/NWeyUpqnKuk?controls=1" width="560"
                         height="315" />
                 </div>
-            </div>
+            </div> */}
 
             <NoExample element="figcaption"
                 description="The <figcaption> HTML element represents a caption or legend describing the rest of the contents of its parent <figure> element."
@@ -49,16 +49,16 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"
             />
 
-            <Example element="iframe"
+            {/* <Example element="iframe"
                 src="https://open.spotify.com/embed/track/6ZDPPl5r7f89l1k5M7ozZe?utm_source=generator"
                 required="src"
                 optional="allow, allowfullscreen, height, loading, name, referrerpolicy, sandbox, srcdoc, width"
                 deprecated="algin, frameborder, longdesc, marginheight, marginwidth, scrolling"
                 description="The <iframe> HTML element represents a nested browsing context, embedding another HTML page into the current one."
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"
-            />
+            /> */}
 
-            <div className="tag-section">
+            <div className="tag-section" id="img">
                 <Label tag="img" />
                 <Attr required="src" optional="alt, crossorigin, anonymous, use-credentials, decoding, elementtiming, height, ismap, loading, referrerpolicy, sizes, srcset, width, usemap" deprecated="align, border, hspace, longdesc, name, vspace" />
                 <Inform description="The <img> HTML element embeds an image into the document." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#styling_with_css" />
@@ -67,7 +67,7 @@ export default function Media() {
                 </div>
             </div>
 
-            <div className="tag-section">
+            <div className="tag-section" id="object">
                 <Label tag="object" />
                 <Attr required="data, type" optional="form, height, name, usemap, width" deprecated="archive, border, classid, codebase, codetype, declare, standby" />
                 <Inform description="The <object> HTML element represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" />
@@ -78,7 +78,7 @@ export default function Media() {
                 </div>
             </div>
 
-            <div className="tag-section">
+            <div className="tag-section" id="picture">
                 <Label tag="picture" />
                 <Attr />
                 <Inform description="The <picture> HTML element contains zero or more <source> elements and one <img> element to offer alternative versions of an image for different display/device scenarios." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" />

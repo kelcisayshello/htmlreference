@@ -15,7 +15,7 @@ interface PropsNE {
 export function NoExample({ element, required="", optional="", deprecated="", description, mdn }: PropsNE) {
     return (
         <>
-            <div className="tag-section">
+            <div className="tag-section" id={element}>
                 <Label tag={element} />
                 <Attr required={required} optional={optional} deprecated={deprecated} />
                 <Inform description={description} mdn={mdn}/>
@@ -69,13 +69,14 @@ export function Example({element, content=null, title="", description, href, req
                 width: `${width}`,
                 height: `${height}`,
                 value: `${value}`,
+                readOnly: true,
             },
             `${content}`);
     }
 
     return (
         <>
-            <div className="tag-section">
+            <div className="tag-section" id={element}>
                 <Label tag={element} />
                 <Attr required={required} optional={optional} deprecated={deprecated} />
                 <Inform description={description} mdn={mdn}/>

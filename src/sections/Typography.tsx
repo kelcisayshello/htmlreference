@@ -67,7 +67,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="br">
                 <Label tag="br" />
                 <Attr deprecated="clear" />
                 <Inform description="The <br> HTML element produces a line break in text (carriage-return)." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" />
@@ -143,7 +143,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="dl">
                 <Label tag="dl" />
                 <Attr />
                 <Inform description="The <dl> HTML element represents a description list. The element encloses a list of groups of terms (specified using the <dt> element) and descriptions (provided by <dd> elements)." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" />
@@ -169,7 +169,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="h1h2h3h4h5h6">
                 <Label tag="h1 - h6" />
                 <Attr />
                 <Inform description="The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" />
@@ -183,8 +183,8 @@ export default function Media() {
                 </div>
             </div>
 
-            <div className="tag-section">
-                <Label tag="h2" />
+            <div className="tag-section" id="hr">
+                <Label tag="hr" />
                 <Attr />
                 <Inform description="The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" />
                 <div className="tag-example remove-flex">
@@ -241,7 +241,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="menu">
                 <Label tag="menu" />
                 <Attr deprecated="align, bgcolor, border, cellpadding, cellspacing, frame, rules, summary, width" />
                 <Inform description="The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" />
@@ -250,7 +250,7 @@ export default function Media() {
                 </div>
             </div>
 
-            <div className="tag-section">
+            <div className="tag-section" id="ol">
                 <Label tag="ol" />
                 <Attr optional="reversed, start, type" />
                 <Inform description="The <ol> HTML element represents an ordered list of items — typically rendered as a numbered list." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" />
@@ -289,7 +289,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="ruby">
                 <Label tag="ruby" />
                 <Attr />
                 <Inform description="The <ruby> HTML element represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" />
@@ -330,7 +330,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="table">
                 <Label tag="table" />
                 <Attr deprecated="align, bgcolor, border, cellpadding, cellspacing, frame, rules, summary, width" />
                 <Inform description="The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" />
@@ -376,7 +376,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="sub">
                 <Label tag="sub" />
                 <Attr />
                 <Inform description="The <sub> HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" />

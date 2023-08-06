@@ -5,7 +5,7 @@ interface Props {
 export default function Header({header}: Props) {
     return (
         <>
-            <h2 className="site-header font-bowlby">{header} Element Tags</h2>
+            <h2 className="section-header font-bowlby">{header} Element Tags</h2>
         </>
     );
 }

@@ -23,7 +23,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="fieldset">
                 <Label tag="fieldset" />
                 <Attr optional="disabled, form, name" />
                 <Inform description="The <fieldset> HTML element is used to group several controls as well as labels (<label>) within a web form." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" />
@@ -32,12 +32,12 @@ export default function Media() {
                 </div>
             </div>
 
-            <div className="tag-section">
+            <div className="tag-section" id="input">
                 <Label tag="input" />
                 <Attr optional="accept, autocomplete, capture, checked, dirname, disabled, form, formaction, formenctype,formmethod, formnovalidate, formtarget, height, list, max, maxlength, min, minlength, multiple, name, pattern, placeholder, popovertarget, popovertargetaction, readonly, required, size, src, step, type, value, width" />
                 <Inform description="The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" />
                 <div className="tag-example remove-flex">
-                    <input className="m-top-btm" type="text" />
+                    <input className="m-top-btm" type="text" placeholder="input . . . " defaultValue="" />
                 </div>
             </div>
 
@@ -48,7 +48,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="legend">
                 <Label tag="legend" />
                 <Attr />
                 <Inform description="The <legend> HTML element represents a caption for the content of its parent <fieldset>." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend" />
@@ -65,7 +65,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="optgroup">
                 <Label tag="optgroup" />
                 <Attr optional="disabled, label" />
                 <Inform description="The <optgroup> HTML element creates a grouping of options within a <select> element." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup" />
@@ -80,7 +80,7 @@ export default function Media() {
                 mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option"
             />
 
-            <div className="tag-section">
+            <div className="tag-section" id="select">
                 <Label tag="select" />
                 <Attr optional="autocomplete, autofocus, disabled, form, multiple, name, required, size" />
                 <Inform description="The <select> HTML element represents a control that provides a menu of options." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" />
