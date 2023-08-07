@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <footer className="site-footer">
-                <p>Copyright © {date.getFullYear()} • <a target="_blank" href="https://www.github.com/kelcisayshello">kelcisayshello</a></p>
+                <p>Copyright © {date.getFullYear()} • Made by <a target="_blank" href="https://www.github.com/kelcisayshello">kelcisayshello</a></p>
             </footer>
         </>
     );

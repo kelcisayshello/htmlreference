@@ -12,7 +12,14 @@ interface PropsNE {
     mdn: string;
 }
 
-export function NoExample({ element, required="", optional="", deprecated="", description, mdn }: PropsNE) {
+export function NoExample({ 
+    element, 
+    required="", 
+    optional="", 
+    deprecated="", 
+    description, 
+    mdn
+ }: PropsNE) {
     return (
         <>
             <div className="tag-section" id={element}>
@@ -44,14 +51,29 @@ interface PropsE {
     data?: string;
     value?: string;
 
-    // global tag attributes (currently unused)
+    // global tag attributes
     id?: string;
     style?: string;
     title?: string;
     alt?: string;   // eventually all elements should have alt text
 }
 
-export function Example({element, content=null, title="", description, href, required="", optional="", deprecated="", mdn, src, height="", width="", dir, value=""}: PropsE){
+export function Example({
+    element, 
+    content=null, 
+    title="", 
+    description, 
+    href, 
+    required="", 
+    optional="", 
+    deprecated="", 
+    mdn, 
+    src, 
+    height="", 
+    width="", 
+    dir, 
+    value=""
+}: PropsE){
 
     function CustomElement() {
         return createElement(

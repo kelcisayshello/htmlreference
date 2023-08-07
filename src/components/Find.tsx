@@ -45,7 +45,7 @@ export function SearchBar() {
 export function FilterByCategory() {
     return (
         <>
-            <form name="searchFilter" className="searchFilters">
+            <form name="searchFilter" className="filter-by-category">
                 <label htmlFor="searchFilter"><FontAwesomeIcon icon={faFilter} /> Filter by category:</label>
 
                 <Checkbox category="container" />
