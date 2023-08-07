@@ -11,7 +11,7 @@ Thanks!
 <br><br>
 
 ## Elements
-🔵 void
+🔵 void, 🔴 deprecated
 ### Container
 * article
 * aside
@@ -96,6 +96,7 @@ Thanks!
 * li
 * mark
 * meter
+* menu 🔴
 * ol
 * p
 * pre
@@ -119,7 +120,7 @@ Thanks!
 * tr
 * textarea
 * time
-* u
+* u 🔴
 * ul
 * var
 * wbr 🔵
