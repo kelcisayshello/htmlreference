@@ -1,10 +1,19 @@
 # HTML Reference
-latest version (`v1.0`) released 3 August 2023
+Thank you for visiting HTML Reference!
 
-### Upcoming Features and Fixes
+<br>
+
+### Languages + Libraries
+* React `v18.2.5`
+* TypeScript `v5.0.2`
+* Vite `v4.4.5`
+* FontAwesome
+
+
+### Upcoming Features (and Issue Fixes)
 Please [click here](https://kelcisayshello.notion.site/0667e2d701a54363a38e87b5dac46c18?v=6d7fffe0a2294eae829ef47d9113c5d9&pvs=4) for an up-to-date list of upcoming features and fixes.
 
-### How to Report an Issue or Discrepancy?
+### How to Report an Issue?
 This project was made and is currently maintained by one person. If you find any kind of issues with the site or discrepancies with the content, please let me know by email ([kelcimensah@gmail.com](mailto:kelcimensah@gmail.com)) with the subject title `@htmlreference: [type your issue here]`. 
 
 Thanks!
