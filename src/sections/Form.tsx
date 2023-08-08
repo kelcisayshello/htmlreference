@@ -13,7 +13,7 @@ export default function Media() {
                 <Header header="Form" />
 
                 <Example element="button"
-                    content="Button"
+                    content="Click me!"
                     optional="autofocus, disabled, form, formaction, formenctype, formmethod, formnovalidate, formtarget, name, popovertarget, popovertargetaction, type, value"
                     description="The <button> HTML element is an interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"

@@ -136,8 +136,10 @@ Thanks!
 * applet
 * basefont
 * big
+* blink
 * dir
 * center
+* embed
 * font
 * frameset
 * frame
@@ -155,6 +157,7 @@ Thanks!
 * portal
 * rb
 * rtc
+* s
 * strike
 * tt
 * u

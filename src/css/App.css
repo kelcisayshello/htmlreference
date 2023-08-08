@@ -171,22 +171,32 @@ blockquote {
   padding: 0.7rem;
 }
 
-button {
+/* --------------------------------- BUTTON --------------------------------- */
+#button button {
   min-height: 2rem;
   min-width: 6rem;
-  background-color: var(--orange_burnt);
-  color: var(--white);
-  border: none;
-  border-radius: 2px;
   transition: 0.2s ease-in-out;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--green_extra_dark);
+  outline: none;
+  background: var(--yellow);
+  padding: 0;
+  border: 1px solid var(--yellow);
+  font-family: 'Bowlby One', cursive;
+
 }
 
-button:hover {
-  background-color: var(--green_light);
+#button button:hover {
+  box-shadow: 5px 5px 23px 0px rgba(0, 0, 0, 0.25);
 }
 
-button:active {
-  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.40) inset;
+#button button:active {
+  background-color: var(--green_dark);
+  color: var(--green_light);
+  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 2px -2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  border: none;
+
 }
 
 caption {
