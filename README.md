@@ -144,12 +144,18 @@ Thanks!
 * isindex
 * keygen
 * listing
+* marquee
 * menu
+* menuitem
 * nextid
+* nobr
 * noframes
 * plaintext
+* param
+* portal
+* rb
+* rtc
 * strike
 * tt
 * u
 * xmp
-
