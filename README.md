@@ -20,7 +20,7 @@ Thanks!
 <br><br>
 
 ## Elements
-🔵 void, 🔴 deprecated
+🔵 void
 ### Container
 * article
 * aside
@@ -105,7 +105,6 @@ Thanks!
 * li
 * mark
 * meter
-* menu 🔴
 * ol
 * p
 * pre
@@ -129,7 +128,28 @@ Thanks!
 * tr
 * textarea
 * time
-* u 🔴
 * ul
 * var
 * wbr 🔵
+### Deprecated
+* acronym
+* applet
+* basefont
+* big
+* dir
+* center
+* font
+* frameset
+* frame
+* isindex
+* keygen
+* listing
+* menu
+* nextid
+* noframes
+* plaintext
+* strike
+* tt
+* u
+* xmp
+
