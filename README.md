@@ -27,7 +27,7 @@ Thanks!
 * body
 * div
 * footer
-* form (also in form)
+* form
 * main
 * nav
 * output
@@ -37,7 +37,6 @@ Thanks!
 * button
 * datalist
 * fieldset
-* form (also in container)
 * input 🔵
 * label
 * legend

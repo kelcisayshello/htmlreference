@@ -174,17 +174,16 @@ blockquote {
 /* --------------------------------- BUTTON --------------------------------- */
 #button button {
   min-height: 2rem;
-  min-width: 6rem;
+  min-width: 7rem;
   transition: 0.2s ease-in-out;
   border-radius: 2px;
   cursor: pointer;
   color: var(--green_extra_dark);
   outline: none;
   background: var(--yellow);
-  padding: 0;
   border: 1px solid var(--yellow);
   font-family: 'Bowlby One', cursive;
-
+  padding: 10px;
 }
 
 #button button:hover {
@@ -195,8 +194,7 @@ blockquote {
   background-color: var(--green_dark);
   color: var(--green_light);
   box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 2px -2px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  border: none;
-
+  border: 1px solid var(--green_dark);
 }
 
 caption {
@@ -247,6 +245,16 @@ del::before {
   font-family: monospace;
   content: '-';
   color: #fbb;
+}
+
+/* -------------------------------- FIELDSET -------------------------------- */
+#fieldset fieldset {
+  width: auto;
+}
+
+#fieldset fieldset input[type="radio"] {
+  margin-top: -1px;
+  vertical-align: middle;
 }
 
 hr {

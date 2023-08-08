@@ -69,20 +69,17 @@ export function FieldSet() {
     return (
         <>
             <fieldset className="m-top-btm">
-                <legend>Choose your favorite color</legend>
+                <legend>Choose a fieldset option</legend>
 
-                <input type="radio" id="green" name="color" />
-                <label htmlFor="green">green</label>
+                <input type="radio" id="option1" name="color" />
+                <label htmlFor="option1">one</label>
 
-                <br />
+                <input type="radio" id="option2" name="color" />
+                <label htmlFor="option2">two</label>
 
-                <input type="radio" id="yellow" name="color" />
-                <label htmlFor="yellow">yellow</label>
 
-                <br />
-
-                <input type="radio" id="red" name="color" />
-                <label htmlFor="red">red</label>
+                <input type="radio" id="option3" name="color" />
+                <label htmlFor="option3">option three</label>
             </fieldset>
         </>
     );
