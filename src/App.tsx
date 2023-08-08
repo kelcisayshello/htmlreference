@@ -8,10 +8,11 @@ import Miscellaneous from "./sections/Miscellaneous";
 import "./css/App.css";
 
 function App() {
-  let btnJumpToTop: HTMLButtonElement = document.getElementById("btnJumpToTop") as HTMLButtonElement;
   window.onscroll = function () { jumpOnScrollFunction() };
 
   function jumpOnScrollFunction() {
+    let btnJumpToTop: HTMLButtonElement = document.getElementById("btnJumpToTop") as HTMLButtonElement;
+
     if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
       btnJumpToTop.style.display = "block";
     } else {

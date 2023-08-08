@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Label from "../components/Label";
 import Attr from "../components/Attribute";
 import Inform from "../components/Inform";
-import "../css/Sections.css";
+import "../css/Tags.css";
 
 export default function Media() {
     return (

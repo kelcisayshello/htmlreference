@@ -1,6 +1,6 @@
 import { NoExample } from "../components/Element";
 import Header from "../components/Header";
-import "../css/Sections.css";
+import "../css/Tags.css";
 
 export default function Container() {
     return (

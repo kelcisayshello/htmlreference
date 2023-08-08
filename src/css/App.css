@@ -30,6 +30,7 @@
 html {
   font-size: 16px;
   background-color: var(--green_dark);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,7 +54,7 @@ h2.section-header {
   color: var(--green_extra_dark);
   border-radius: 2px;
   border: 2px solid var(--green_extra_dark);
-  margin: 5rem 0 0px;
+  margin: 4.5rem 0 0px;
 }
 
 h2.section-header::selection {
@@ -83,7 +84,7 @@ footer.site-footer {
   width: 100%;
   height: inherit;
   padding-left: 20px;
-  border-radius: 15px;
+  border-radius: 0.6rem;
   box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 0.10);
 }
 
@@ -98,15 +99,29 @@ footer.site-footer {
   height: 20px;
   width: 20px;
   margin: 0 0.4rem 0 1rem;
-  /* display: list-item; */
 }
 
-/* @media screen { max-width= 320px; } */
+@media screen and (max-width: 768px) {
+  .filter-by-category {
+    display: none;
+  }
+
+  /* .filter-by-category input[type="checkbox"] {
+    padding: 0;
+    margin: 0 0.6rem 0 0;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+  .filter-by-category label {
+    display: block;
+  } */
+}
 
 #btnJumpToTop {
   display: none;
   position: fixed;
-  bottom: 20px; 
+  bottom: 20px;
   right: 30px;
   z-index: 99;
   border: none;
@@ -135,7 +150,12 @@ a:hover {
   color: var(--orange_burnt);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
 }
 
@@ -165,7 +185,7 @@ button:hover {
   background-color: var(--green_light);
 }
 
-button:active{
+button:active {
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.40) inset;
 }
 
@@ -190,7 +210,7 @@ code {
 }
 
 .datalist {
-  display: block!important;
+  display: block !important;
   border: 1px solid red;
   width: 100%;
 }
@@ -261,7 +281,7 @@ label {
 
 mark {
   background-color: var(--orange_burnt);
-  color: var(--white)!important;
+  color: var(--white) !important;
 }
 
 pre {
@@ -287,7 +307,7 @@ progress::-webkit-progress-value {
   background-color: var(--yellow);
 }
 
-progress::-moz-progress-bar{
+progress::-moz-progress-bar {
   background-color: var(--yellow);
 }
 
@@ -298,7 +318,8 @@ progress::-moz-progress-bar{
   text-align: left;
 }
 
-#table th, #table td {
+#table th,
+#table td {
   border-bottom: 1px solid var(--green_light);
   padding: 7px;
 }

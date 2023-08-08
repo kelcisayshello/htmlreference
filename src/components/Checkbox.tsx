@@ -14,7 +14,7 @@ export default function Checkbox({ category }: Props) {
     let categoryDiv = document.getElementById(category + "Container") as HTMLDivElement;
 
     if (categoryDiv) {
-        if (!isChecked){
+        if (!isChecked) {
             categoryDiv.style.display = "none"
         } else {
             categoryDiv.style.display = "block"
@@ -23,13 +23,15 @@ export default function Checkbox({ category }: Props) {
 
     return (
         <>
-            <input type="checkbox"
-                name="filterElements"
-                id={'checkbox_' + category}
-                checked={isChecked}
-                onChange={handleOnChange}
-            />
-            <label htmlFor={category}>{category}</label>
+            <label htmlFor={category}>
+                <input type="checkbox"
+                    name="filterElements"
+                    id={'checkbox_' + category}
+                    checked={isChecked}
+                    onChange={handleOnChange}
+                />
+                {category}
+            </label>
         </>
     );
 }
