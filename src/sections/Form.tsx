@@ -1,5 +1,5 @@
 import { NoExample, Example } from "../components/Element";
-import { OptGroup, FieldSet } from "../components/ElementExamples";
+import { FieldSet, Input, OptGroup } from "../components/ElementExamples";
 import Header from "../components/Header";
 import Label from "../components/Label";
 import Attr from "../components/Attribute";
@@ -38,7 +38,7 @@ export default function Media() {
                     <Attr optional="accept, autocomplete, capture, checked, dirname, disabled, form, formaction, formenctype,formmethod, formnovalidate, formtarget, height, list, max, maxlength, min, minlength, multiple, name, pattern, placeholder, popovertarget, popovertargetaction, readonly, required, size, src, step, type, value, width" />
                     <Inform description="The <input> HTML element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" />
                     <div className="tag-example remove-flex">
-                        <input className="m-top-btm" type="text" placeholder="input . . . " defaultValue="" />
+                        <Input />
                     </div>
                 </div>
 
@@ -49,21 +49,9 @@ export default function Media() {
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label"
                 />
 
-                <div className="tag-section" id="legend">
-                    <Label tag="legend" />
-                    <Attr />
-                    <Inform description="The <legend> HTML element represents a caption for the content of its parent <fieldset>." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend" />
-                    <div className="tag-example">
-                        <FieldSet />
-                    </div>
-                </div>
-
-                <Example element="progress"
-                    content="74%"
-                    value="74"
-                    required="max, value"
-                    description="The <progress> HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
-                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"
+                <NoExample element="legend"
+                    description="The <legend> HTML element represents a caption for the content of its parent <fieldset>."
+                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend"
                 />
 
                 <div className="tag-section" id="optgroup">
@@ -79,6 +67,11 @@ export default function Media() {
                     optional="disabled, label, selected, value"
                     description="The <option> HTML element is used to define an item contained in a <select>, an <optgroup>, or a <datalist> element. As such, <option> can represent menu items in popups and other lists of items in an HTML document."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option"
+                />
+
+                <NoExample element="search"
+                    description="The <search> HTML element is a container representing the parts of the document or application with form controls or other content related to performing a search or filtering operation. The <search> element semantically identifies the purpose of the element's contents as having search or filtering capabilities."
+                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search"
                 />
 
                 <div className="tag-section" id="select">

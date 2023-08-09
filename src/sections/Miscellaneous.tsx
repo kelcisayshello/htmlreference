@@ -1,4 +1,4 @@
-import { NoExample } from "../components/Element";
+import { Example, NoExample } from "../components/Element";
 import Header from "../components/Header";
 import "../css/Tags.css";
 
@@ -65,6 +65,15 @@ export default function Miscellaneous() {
                     description="The <noscript> HTML element defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"
                 />
+
+                <Example element="progress"
+                    content="74%"
+                    value="74"
+                    required="max, value"
+                    description="The <progress> HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
+                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress"
+                />
+
 
                 <NoExample element="script"
                     optional="async, crossorigin, defer, integrity, nomodule, nonce, referrerpolicy, src, type"

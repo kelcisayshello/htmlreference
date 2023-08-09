@@ -31,8 +31,8 @@ Thanks!
 * main
 * nav
 * output
-* search
-* section (also in form)
+* search (also in form)
+* section 
 ### Form
 * button
 * datalist
@@ -48,7 +48,6 @@ Thanks!
 ### Media
 * area 🔵
 * audio
-* embed 🔵
 * figcaption
 * figure
 * iframe

@@ -40,7 +40,7 @@ export default function Media() {
                 />
 
                 <Example element="b"
-                    content="This sample text is bold."
+                    content="This sample text is bolded."
                     description="The <b> HTML element is used to draw the reader's attention to the element's contents, which are not otherwise granted special importance."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b"
                 />
@@ -68,16 +68,11 @@ export default function Media() {
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi"
                 />
 
-                <div className="tag-section" id="br">
-                    <Label tag="br" />
-                    <Attr deprecated="clear" />
-                    <Inform description="The <br> HTML element produces a line break in text (carriage-return)." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" />
-                    <div className="tag-example remove-flex">
-                        <p>This is sample text before a <code>&lt;br&gt;</code> element.</p>
-                        <br />
-                        <p>This is sample text after a <code>&lt;br&gt;</code> element.</p>
-                    </div>
-                </div>
+                <NoExample element="br"
+                    deprecated="clear"
+                    description="The <br> HTML element produces a line break in text (carriage-return)."
+                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br"
+                />
 
                 <NoExample element="caption"
                     deprecated="align"
@@ -124,21 +119,21 @@ export default function Media() {
                 />
 
                 <Example element="del"
-                    content="This sample text has been marked as deleted."
+                    content="This sample text is marked as deleted."
                     optional="cite, datetime"
                     description="The <del> HTML element represents a range of text that has been deleted from a document."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del"
                 />
 
                 <Example element="dfn"
-                    content="This sample text has been marked as a term to be defined."
+                    content="This sample text is marked as a term to be defined."
                     optional="open"
                     description="The <dfn> HTML element is used to indicate the term being defined within the context of a definition phrase or sentence. "
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn"
                 />
 
                 <Example element="details"
-                    content="This sample text has been placed within a disclosure widget."
+                    content="This sample text is placed within a disclosure widget."
                     optional="open"
                     description="The <details> HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an 'open' state."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"
@@ -165,7 +160,7 @@ export default function Media() {
                 />
 
                 <Example element="em"
-                    content="This text has been stress emphasized."
+                    content="This text is stress emphasized."
                     description="The <em> HTML element marks text that has stress emphasis. The <em> element can be nested, with each level of nesting indicating a greater degree of emphasis."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em"
                 />
@@ -184,32 +179,35 @@ export default function Media() {
                     </div>
                 </div>
 
+                <NoExample element="hgroup"
+                    description="The <hgroup> HTML element represents a heading and related content. It groups a single <h1>–<h6> element with one or more <p>."
+                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup"
+                />
+
                 <div className="tag-section" id="hr">
                     <Label tag="hr" />
                     <Attr />
                     <Inform description="The <h1> to <h6> HTML elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" />
                     <div className="tag-example remove-flex">
-                        <p>This is sample text before an <code>&lt;hr&gt;</code> element.</p>
                         <hr />
-                        <p>This is sample text after an <code>&lt;hr&gt;</code> element.</p>
                     </div>
                 </div>
 
                 <Example element="i"
-                    content="This sample text has been italicized."
+                    content="This sample text is italicized."
                     description="The <i> HTML element represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, taxonomical designations, among others. Historically, these have been presented using italicized type, which is the original source of the <i> naming of this element."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i"
                 />
 
                 <Example element="ins"
-                    content="This sample text has been marked as inserted."
+                    content="This sample text is marked as inserted."
                     optional="cite, datetime"
                     description="The <ins> HTML element represents a range of text that has been added to a document."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins"
                 />
 
                 <Example element="kbd"
-                    content="CTRL"
+                    content="Ctrl"
                     description="The <kbd> HTML element represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. "
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"
                 />
@@ -221,14 +219,8 @@ export default function Media() {
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li"
                 />
 
-                <NoExample element="map"
-                    required="name"
-                    description="The <map> HTML element is used with <area> elements to define an image map (a clickable link area)."
-                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map"
-                />
-
                 <Example element="mark"
-                    content="This sample text has been marked."
+                    content="This sample text is marked."
                     description="The <mark> HTML element represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark"
                 />
@@ -241,15 +233,6 @@ export default function Media() {
                     description="The <meter> HTML element represents either a scalar value within a known range or a fractional value."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter"
                 />
-
-                <div className="tag-section" id="menu">
-                    <Label tag="menu" />
-                    <Attr deprecated="align, bgcolor, border, cellpadding, cellspacing, frame, rules, summary, width" />
-                    <Inform description="The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" />
-                    <div className="tag-example remove-flex">
-                        <List element="menu" />
-                    </div>
-                </div>
 
                 <div className="tag-section" id="ol">
                     <Label tag="ol" />
@@ -319,17 +302,39 @@ export default function Media() {
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small"
                 />
 
-                <Example element="span"
-                    content="This sample text is in a span element."
+                <NoExample element="span"
                     description="The <span> HTML element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <span> is very much like a <div> element, but <div> is a block-level element whereas a <span> is an inline-level element."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span"
                 />
 
                 <Example element="strong"
-                    content="This sample text has been marked as strong."
+                    content="This sample text is marked as strong."
                     description="The <strong> HTML element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type."
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong"
                 />
+
+                <div className="tag-section" id="sub">
+                    <Label tag="sub" />
+                    <Attr />
+                    <Inform description="The <sub> HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" />
+                    <div className="tag-example remove-flex">
+                        <p>This sample text has a <sub>&lt;sub&gt;</sub> element.</p>
+                    </div>
+                </div>
+
+                <NoExample element="summary"
+                    description="The <summary> HTML element specifies a summary, caption, or legend for a <details> element's disclosure box. Clicking the <summary> element toggles the state of the parent <details> element open and closed."
+                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"
+                />
+
+                <div className="tag-section" id="sup">
+                    <Label tag="sup" />
+                    <Attr />
+                    <Inform description="The <sup> HTML element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" />
+                    <div className="tag-example remove-flex">
+                        <p>This sample text has a <sup>&lt;sup&gt;</sup> element.</p>
+                    </div>
+                </div>
 
                 <div className="tag-section" id="table">
                     <Label tag="table" />
@@ -377,29 +382,6 @@ export default function Media() {
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr"
                 />
 
-                <div className="tag-section" id="sub">
-                    <Label tag="sub" />
-                    <Attr />
-                    <Inform description="The <sub> HTML element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" />
-                    <div className="tag-example remove-flex">
-                        <p>This sample text has a <sub>&lt;sub&gt;</sub> element.</p>
-                    </div>
-                </div>
-
-                <NoExample element="summary"
-                    description="The <summary> HTML element specifies a summary, caption, or legend for a <details> element's disclosure box. Clicking the <summary> element toggles the state of the parent <details> element open and closed."
-                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary"
-                />
-
-                <div className="tag-section">
-                    <Label tag="sup" />
-                    <Attr />
-                    <Inform description="The <sup> HTML element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" />
-                    <div className="tag-example remove-flex">
-                        <p>This sample text has a <sup>&lt;sup&gt;</sup> element.</p>
-                    </div>
-                </div>
-
                 <Example element="textarea"
                     optional="autocomplete, autofocus, cols, dirname, disabled, form, maxlength, minlength, name, placeholder, readonly, required, rows, spellcheck, wrap"
                     content="This sample text is within a text area."
@@ -407,7 +389,7 @@ export default function Media() {
                     mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"
                 />
 
-                <div className="tag-section">
+                <div className="tag-section" id="time">
                     <Label tag="time" />
                     <Attr optional="datetime" />
                     <Inform description="The <time> HTML element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" />
@@ -416,13 +398,7 @@ export default function Media() {
                     </div>
                 </div>
 
-                <Example element="u"
-                    content="This sample text is an unarticulated annotation."
-                    description="The <u> HTML element represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS."
-                    mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u"
-                />
-
-                <div className="tag-section">
+                <div className="tag-section" id="ul">
                     <Label tag="ul" />
                     <Attr deprecated="compact, type" />
                     <Inform description="The <ul> HTML element represents an unordered list of items, typically rendered as a bulleted list." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" />
@@ -431,7 +407,7 @@ export default function Media() {
                     </div>
                 </div>
 
-                <div className="tag-section">
+                <div className="tag-section" id="var">
                     <Label tag="var" />
                     <Attr />
                     <Inform description="The <var> HTML element represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" />
@@ -440,8 +416,8 @@ export default function Media() {
                     </div>
                 </div>
 
-                <div className="tag-section">
-                    <Label tag="var" />
+                <div className="tag-section" id="wbr">
+                    <Label tag="wbr" />
                     <Attr />
                     <Inform description="The <wbr> HTML element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location." mdn="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" />
                     <div className="tag-example remove-flex">

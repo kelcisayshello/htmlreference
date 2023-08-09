@@ -41,8 +41,8 @@ function App() {
         {/* HTML Element Sections  */}
         <Container />
         <Form />
-        <Miscellaneous />
         <Media />
+        <Miscellaneous />
         <Typography />
 
         <Footer />

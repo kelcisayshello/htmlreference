@@ -72,7 +72,8 @@ export function Example({
     height="", 
     width="", 
     dir, 
-    value=""
+    value="",
+    data=""
 }: PropsE){
 
     function CustomElement() {
@@ -91,6 +92,7 @@ export function Example({
                 width: `${width}`,
                 height: `${height}`,
                 value: `${value}`,
+                data: `${data}`,
                 readOnly: true,
             },
             `${content}`);
