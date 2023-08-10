@@ -31,6 +31,7 @@ html {
   font-size: 16px;
   background-color: var(--green_dark);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -39,6 +40,7 @@ body {
   width: 85vw;
   min-height: 100vh;
   color: var(--green_light);
+  overflow-x: hidden;
 }
 
 h1.site-title {
@@ -63,7 +65,7 @@ h2.section-header::selection {
 }
 
 div.app-container {
-  overflow-x: none;
+  overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   padding: 0px 0px 2rem;
   font-weight: 400;
@@ -269,8 +271,8 @@ del::before {
 }
 
 #img img, #picture img {
-  width: auto;
-  height: 20rem;
+  width: 65vw;
+  height: auto;
 }
 
 ins {
